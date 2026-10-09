@@ -211,3 +211,25 @@ def monte_carlo_pi(samples,seed=0):
     rng=Random(seed)
     hits=sum(1 for _ in range(samples) if rng.random()**2+rng.random()**2<=1.)
     return {"estimate":4*hits/samples,"samples":samples,"seed":seed}
+
+
+def spearman(x,y):
+    """Rank correlation using average ranks for ties; monotonic relation, not causation."""
+    a,b=_sample(x,2),_sample(y,2)
+    if len(a)!=len(b):
+        raise ProbabilityError("Spearman requires equal-length samples")
+    def average_ranks(values):
+        ordered=sorted(range(len(values)),key=lambda i:values[i])
+        ranks=[0.]*len(values)
+        pos=0
+        while pos<len(ordered):
+            end=pos+1
+            while end<len(ordered) and values[ordered[end]]==values[ordered[pos]]:
+                end+=1
+            rank=(pos+1+end)/2
+            for j in ordered[pos:end]:
+                ranks[j]=rank
+            pos=end
+        return ranks
+    # Pearson over tied ranks = Spearman rho.
+    return pearson(average_ranks(a),average_ranks(b))

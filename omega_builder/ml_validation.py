@@ -256,3 +256,87 @@ def active_learning_uncertainty(probabilities,top_k=10):
     except ProbabilityError as exc:
         raise ValidationError(str(exc)) from exc
     return sorted(ranked,key=lambda o:(-o["entropy_bits"],o["index"]))[:top_k]
+
+
+def random_undersample_train(matrix,labels,seed=0):
+    """Reproducible class-balancing by removing TRAIN examples; preserves X/y."""
+    if not isinstance(matrix,(list,tuple)) or not 2<=len(matrix)<=100000:
+        raise ValidationError("Bounded training matrix required")
+    if not isinstance(labels,(list,tuple)) or len(labels)!=len(matrix):
+        raise ValidationError("Label count mismatch")
+    _int(seed,0,2147483647,"seed")
+    groups=defaultdict(list)
+    for idx,label in enumerate(labels):
+        if type(label) not in (int,str,bool):
+            raise ValidationError("Class labels must be categorical")
+        groups[(type(label).__name__,label)].append(idx)
+    if len(groups)<2 or len(groups)>100:
+        raise ValidationError("Need 2..100 classes")
+    target=min(len(indices) for indices in groups.values())
+    rng=Random(seed)
+    selected=[]
+    for key in sorted(groups,key=str):
+        selected.extend(rng.sample(groups[key],target))
+    selected.sort()
+    return {"X":[matrix[j] for j in selected],"y":[labels[j] for j in selected],
+            "selected_train_indices":selected,"fit_scope":"training_only",
+            "method":"random_undersampling"}
+
+
+def random_oversample_train(matrix,labels,seed=0):
+    """Reproducible oversampling with replacement on TRAIN; duplicates may overfit."""
+    if not isinstance(matrix,(list,tuple)) or not 2<=len(matrix)<=100000:
+        raise ValidationError("Bounded training matrix required")
+    if not isinstance(labels,(list,tuple)) or len(labels)!=len(matrix):
+        raise ValidationError("Label count mismatch")
+    _int(seed,0,2147483647,"seed")
+    groups=defaultdict(list)
+    for idx,label in enumerate(labels):
+        if type(label) not in (int,str,bool):
+            raise ValidationError("Categorical labels required")
+        groups[(type(label).__name__,label)].append(idx)
+    if not 2<=len(groups)<=100:
+        raise ValidationError("Need 2..100 classes")
+    target=max(len(indices) for indices in groups.values())
+    rng=Random(seed)
+    selected=list(range(len(matrix)))
+    for key in sorted(groups,key=str):
+        subset=groups[key]
+        selected.extend(rng.choice(subset) for _ in range(target-len(subset)))
+    return {"X":[matrix[j] for j in selected],"y":[labels[j] for j in selected],
+            "selected_train_indices":selected,"fit_scope":"training_only",
+            "method":"random_oversampling"}
+
+
+def numeric_noise_augment_train(matrix, std,seed=0):
+    """Synthetic copies with Gaussian noise. Label invariance is a caller assumption."""
+    if not isinstance(matrix,(tuple,list)) or not 1<=len(matrix)<=10000:
+        raise ValidationError("Expected bounded numerical training matrix")
+    if type(std) not in (int,float) or not isfinite(float(std)) or std<=0:
+        raise ValidationError("Noise SD must be positive and finite")
+    _int(seed,0,2147483647,"seed")
+    rng=Random(seed)
+    generated=[]
+    width=None
+    for row in matrix:
+        values=_numeric(row)
+        if width is None:
+            width=len(values)
+        if width!=len(values) or width>256:
+            raise ValidationError("Expected rectangular array <=256 features")
+        generated.append([v+rng.gauss(0,std) for v in values])
+    return {"X":generated,"method":"gaussian_numeric_augmentation",
+            "fit_scope":"training_only",
+            "warning":"Class labels and constraints may NOT be invariant under noise"}
+
+
+def synthetic_gaussian_reference(means,standard_deviations,n,seed=0):
+    """Simulate independent Gaussians from EXPLICIT parameters, never patient data."""
+    m=_numeric(means); s=_numeric(standard_deviations)
+    if len(m)!=len(s) or len(m)>64 or any(z<=0 for z in s):
+        raise ValidationError("Valid positive SD required per dimension")
+    _int(n,1,10000,"n"); _int(seed,0,2147483647,"seed")
+    rng=Random(seed)
+    return {"X":[[rng.gauss(mu,sd) for mu,sd in zip(m,s)] for _ in range(n)],
+            "origin":"synthetic_independent_gaussian_reference",
+            "privacy_warning":"Synthetic generation is NOT automatic anonymization or GDPR exemption"}
