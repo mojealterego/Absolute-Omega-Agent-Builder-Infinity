@@ -275,3 +275,27 @@ def plan_tool_descriptors(manifest,allowlist,max_tools=8):
             "missing_tools":sorted(wanted-present),
             "selected_count":len(selected),
             "executed":False,"state":"SCHEMA_ONLY_NOT_AUTHORIZED"}
+
+
+def registry_list_query(search=None,cursor=None,updated_since=None):
+    """Build an OFFLINE official registry URL; never fetch or follow URL contents.
+
+    Pagination cursors remain opaque; do not construct a cursor from page size.
+    """
+    from urllib.parse import urlencode
+    from datetime import datetime
+    query={"version":"latest"}
+    if search is not None:
+        query["search"]=_string(search,"search",200)
+    if cursor is not None:
+        query["cursor"]=_string(cursor,"cursor",2048)
+    if updated_since is not None:
+        text=_string(updated_since,"updated_since",50)
+        if not text.endswith("Z"):
+            raise MCPRegistryError("updated_since requires RFC3339 UTC Z timestamp")
+        try:
+            datetime.fromisoformat(text.replace("Z","+00:00"))
+        except ValueError as exc:
+            raise MCPRegistryError("Invalid RFC3339 timestamp") from exc
+        query["updated_since"]=text
+    return "https://registry.modelcontextprotocol.io/v0.1/servers?"+urlencode(query)
