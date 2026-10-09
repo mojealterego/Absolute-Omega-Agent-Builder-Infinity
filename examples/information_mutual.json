@@ -1,0 +1,15 @@
+{
+  "operation": "information.mutual_information",
+  "args": {
+    "joint": [
+      [
+        0.5,
+        0
+      ],
+      [
+        0,
+        0.5
+      ]
+    ]
+  }
+}

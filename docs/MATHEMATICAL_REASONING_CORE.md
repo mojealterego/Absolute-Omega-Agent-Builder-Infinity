@@ -36,3 +36,7 @@ Przy integracji z przyszłym DGM biblioteka może weryfikować konkretnie sformu
 Implementacja celowo limituje rozmiary danych (64×64 dla float, 16×16 dla exact, 12 zmiennych w logicznym truth-table i 1000 węzłów w grafie). Brak dostępu do sieci. Komendy z JSON działają wyłącznie z listy dozwolonych operacji.
 
 Uściślenia merytoryczne: DAG to graf skierowany acykliczny, nie każdy graf skierowany. QR factorization nie oznacza gotowego iteracyjnego algorytmu wartości własnych. Rzeczywiste zabezpieczenia DGM i decyzje o wdrażaniu muszą być poza tym modułem.
+
+## Aktualizacja: statystyka, teoria informacji i preprocessing
+
+Dołączono moduły `statistics.py`, `information.py` i `preprocessing.py` oraz offline `storage.py`. Interfejs JSON udostępnia wybrane wywołania przez `python -m omega_builder math-ops`. SQLite jest dostępny jedynie przez Python API. Szczegóły i ograniczenia w [STATISTICS_DATA_ENGINEERING.md](STATISTICS_DATA_ENGINEERING.md).

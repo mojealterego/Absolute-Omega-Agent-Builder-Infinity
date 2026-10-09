@@ -25,7 +25,7 @@ Dla każdej kategorii, zgodnie z dozwolonym trybem, użytkownik wybiera Code / N
 
 - **10** opcji głównego menu.
 - **257** nazw języków, dialektów i DSL do wyboru (`catalog_only`). Żadnego z tych 257 adapterów kompilacji nie uznano za zaimplementowany tylko na podstawie wpisu na liście.
-- **141** nazw frameworków, protokołów, produktów i środowisk: kandydaci (`candidate_unverified`), a nie aktywne integracje.
+- **144** nazw frameworków, protokołów, produktów i środowisk: kandydaci (`candidate_unverified`), a nie aktywne integracje.
 - **133** unikalne wymagania funkcjonalne, poznawcze, ewolucyjne, bezpieczeństwa i biznesowe.
 - Wstępna specyfikacja **Zeusa** z blokadą implementacji do czasu przekazania brakującego materiału i wyraźnego polecenia użytkownika.
 
@@ -100,3 +100,13 @@ Szczegóły, ograniczenia, przykłady i definicje gwarancji: [docs/MATHEMATICAL_
 Uruchomienie: python -m omega_builder math-ops; python -m omega_builder math examples/math_exact_linear.json.
 
 Żadnego automatycznego tworzenia ani uruchamiania agenta Zeus. ON HOLD.
+
+## Uzupełnienie VIII / Data Engineering — statystyka, informacja, preprocessing, magazyn lokalny
+
+- `omega_builder/mathematics/statistics.py`: rzeczywiste PMF/PDF, estymatory MLE/MAP, korelacja, kowariancja, Markov, Monte Carlo.
+- `omega_builder/mathematics/information.py`: H(Y|X), I(X;Y), pojemność Shannon–Hartley, SNR, kodek Huffmana.
+- `omega_builder/preprocessing.py`: imputacja i standaryzacja **fit tylko na treningowym**, one-hot, deduplikacja, IQR, PCA (NumPy).
+- `omega_builder/storage.py`: lokalny SQLite dla JSON key–value, relacji, wektorowego cosine scan, szeregów czasowych, rodowodu i bitemporal facts; **nie jest to produkcyjny Data Lakehouse, Neo4j ani Qdrant**.
+- [Dokumentacja i przykłady](docs/STATISTICS_DATA_ENGINEERING.md). Matematyczne API jest wyłącznie offline i jawnie ograniczone.
+
+**Zeus nadal `ON_HOLD_AWAITING_USER_MATERIAL`.**

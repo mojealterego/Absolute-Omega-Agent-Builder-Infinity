@@ -1,0 +1,8 @@
+{
+  "operation": "statistics.binomial_pmf",
+  "args": {
+    "k": 2,
+    "n": 3,
+    "p": 0.5
+  }
+}

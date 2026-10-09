@@ -38,3 +38,14 @@ W fazie 0 można rozwijać **infrastrukturę katalogu**, dokumentację i mechani
 | Neuromorphic SNN + vector compute hardware benchmark | `RESEARCH_ONLY` |
 | Przegląd i deduplikacja pełnego 793-stronicowego Vol. 1 | `PARTIAL_INTAKE` |
 | Agent Architekt OMEGA ZEUS Infinity | **`ON_HOLD` — NIE TWORZYĆ** |
+
+## Etap statystyki i danych — baza prac (2026-10-09)
+
+| Obszar | Status |
+|---|---|
+| Korelacja, rozkłady, MLE/MAP, Markov, Monte Carlo, entropia warunkowa, MI, Huffman | `IMPLEMENTED_OFFLINE_AND_TESTED` po zielonym CI |
+| Train-only fit/transform, IQR, one-hot, PCA opcjonalnie NumPy | `IMPLEMENTED_OFFLINE` (PCA wymaga NumPy) |
+| SQLite: KV, graph edges, time series, vectors brute-force, provenance, bitemporal | `IMPLEMENTED_LOCAL_PROTOTYPE` |
+| Data lakehouse ACID, obiektowy storage, GraphRAG, Qdrant, Neo4j, embedding generation | `NOT_IMPLEMENTED` |
+| Monitoring drift, rozkłady wielowymiarowe, strumieniowe przetwarzanie Big Data | `NEXT_STAGE` |
+| ZEUS | **`ON_HOLD_AWAITING_USER_MATERIAL`** |
