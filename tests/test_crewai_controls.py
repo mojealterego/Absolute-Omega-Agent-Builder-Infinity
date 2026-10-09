@@ -24,7 +24,7 @@ class FlowTests(unittest.TestCase):
         events=[dict(event) for event in run.audit]
         events[0]["cost_micro_usd"]=99
         with self.assertRaises(f.FlowPolicyError):
-            f.replay_flow(run.policy,events)
+            f.replay_flow(run.policy,events,expected_sha256=run.snapshot()["audit_sha256"])
 
     def test_long_hash_chain_budget(self):
         steps=[f.Step("s",None,None,10)]
