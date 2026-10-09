@@ -1,0 +1,1087 @@
+{
+  "schema_version": "1.0",
+  "capabilities": [
+    {
+      "id": "bitemporal-store",
+      "name": "bitemporal-store",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "bitemporal-graph-memory",
+      "name": "bitemporal-graph-memory",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "valid-time",
+      "name": "valid-time",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "transaction-time",
+      "name": "transaction-time",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "point-in-time-recovery",
+      "name": "point-in-time-recovery",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "working-memory",
+      "name": "working-memory",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "long-term-memory",
+      "name": "long-term-memory",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "semantic-memory",
+      "name": "semantic-memory",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "episodic-memory",
+      "name": "episodic-memory",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "procedural-memory",
+      "name": "procedural-memory",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "coala",
+      "name": "CoALA",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "g-memory",
+      "name": "G-Memory",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "shimi-index",
+      "name": "SHIMI-index",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "holographic-memory",
+      "name": "holographic-memory",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "hdc-vsa",
+      "name": "HDC-VSA",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "memory-paging",
+      "name": "memory-paging",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "context-compression",
+      "name": "context-compression",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "memory-of-failures",
+      "name": "memory-of-failures",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "rlaif",
+      "name": "RLAIF",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "federated-knowledge-graph",
+      "name": "federated-knowledge-graph",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "graphrag",
+      "name": "GraphRAG",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "rag-2.0",
+      "name": "RAG-2.0",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "temporal-rag",
+      "name": "temporal-RAG",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "concept-drift",
+      "name": "concept-drift",
+      "category": "memory",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "react",
+      "name": "ReAct",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "chain-of-thought-reasoning",
+      "name": "chain-of-thought-reasoning",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "tree-of-thoughts",
+      "name": "tree-of-thoughts",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "graph-of-thoughts",
+      "name": "Graph-of-Thoughts",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "decision-cycle",
+      "name": "decision-cycle",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "cognitive-modulation",
+      "name": "cognitive-modulation",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "reflexion",
+      "name": "reflexion",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "self-correction",
+      "name": "self-correction",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "retrospective-correction",
+      "name": "retrospective-correction",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "self-consistency",
+      "name": "self-consistency",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "multi-agent-debate",
+      "name": "multi-agent-debate",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "ab-mcts",
+      "name": "AB-MCTS",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "bellman-mdp",
+      "name": "Bellman-MDP",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "nash-equilibrium",
+      "name": "Nash-equilibrium",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "r2-reasoning",
+      "name": "R2-reasoning",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "r3-titans",
+      "name": "R3-Titans",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "auto-cot",
+      "name": "auto-CoT",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "meta-prompting",
+      "name": "meta-prompting",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "plan-and-solve",
+      "name": "plan-and-solve",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "self-critique",
+      "name": "self-critique",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "formal-verification",
+      "name": "formal-verification",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "imandrax",
+      "name": "ImandraX",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "uncertainty-estimation",
+      "name": "uncertainty-estimation",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "confidence-gating",
+      "name": "confidence-gating",
+      "category": "reasoning",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "alphaevolve",
+      "name": "AlphaEvolve",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "darwin-godel-machine",
+      "name": "Darwin-Godel-Machine",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "mutation-engine",
+      "name": "mutation-engine",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "digital-genotype",
+      "name": "digital-genotype",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "mutation-loop",
+      "name": "mutation-loop",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "recursive-self-improvement",
+      "name": "recursive-self-improvement",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "candidate-branch-sandbox",
+      "name": "candidate-branch-sandbox",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "regression-comparison",
+      "name": "regression-comparison",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "evolutionary-scoring",
+      "name": "evolutionary-scoring",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "shadow-deployment",
+      "name": "shadow-deployment",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "a-b-testing",
+      "name": "A-B-testing",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "rollback",
+      "name": "rollback",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "cev-alignment",
+      "name": "CEV-alignment",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "oesi",
+      "name": "OESI",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "segpa",
+      "name": "SEGPA",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "secure-enclave-attestation",
+      "name": "secure-enclave-attestation",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "adversarial-gating",
+      "name": "adversarial-gating",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "synthetic-red-team",
+      "name": "synthetic-red-team",
+      "category": "evolution",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "jepa",
+      "name": "JEPA",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "snn",
+      "name": "SNN",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "titans-neural-memory",
+      "name": "Titans-neural-memory",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "deep-generative-models",
+      "name": "deep-generative-models",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "neural-steering",
+      "name": "neural-steering",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "hdc",
+      "name": "HDC",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "r3mem",
+      "name": "R3Mem",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "toolformer",
+      "name": "Toolformer",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "distillation",
+      "name": "distillation",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "dpo",
+      "name": "DPO",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "federated-learning",
+      "name": "federated-learning",
+      "category": "neural_research",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "event-driven-architecture",
+      "name": "event-driven-architecture",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "asynchronous-concurrency",
+      "name": "asynchronous-concurrency",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "dag-planning",
+      "name": "DAG-planning",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "agent-registration",
+      "name": "agent-registration",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "agent-communication",
+      "name": "agent-communication",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "agent-delegation",
+      "name": "agent-delegation",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "service-discovery",
+      "name": "service-discovery",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "orchestrator",
+      "name": "orchestrator",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "task-queue",
+      "name": "task-queue",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "role-routing",
+      "name": "role-routing",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "agent-swarm",
+      "name": "agent-swarm",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "agent-legion",
+      "name": "agent-legion",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "human-in-the-loop",
+      "name": "human-in-the-loop",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "budgeting",
+      "name": "budgeting",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "exponential-backoff-jitter",
+      "name": "exponential-backoff-jitter",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "deadline-timeouts",
+      "name": "deadline-timeouts",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "load-shedding",
+      "name": "load-shedding",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "graceful-degradation",
+      "name": "graceful-degradation",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "canary",
+      "name": "canary",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "shadow-mode",
+      "name": "shadow-mode",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "mcp-gateway",
+      "name": "mcp-gateway",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "agent-protocol",
+      "name": "agent-protocol",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "zenoh",
+      "name": "Zenoh",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "fipa-acl",
+      "name": "FIPA-ACL",
+      "category": "orchestration",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "zero-trust-sandbox",
+      "name": "zero-trust-sandbox",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "prompt-injection-boundary",
+      "name": "prompt-injection-boundary",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "data-exfiltration-controls",
+      "name": "data-exfiltration-controls",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "secret-redaction",
+      "name": "secret-redaction",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "schema-enforcement",
+      "name": "schema-enforcement",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "signed-artifacts",
+      "name": "signed-artifacts",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "supply-chain-scanning",
+      "name": "supply-chain-scanning",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "policy-approval",
+      "name": "policy-approval",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "risk-tiering",
+      "name": "risk-tiering",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "rate-limiting",
+      "name": "rate-limiting",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "resource-limits",
+      "name": "resource-limits",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "auditable-actions",
+      "name": "auditable-actions",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "human-authorization",
+      "name": "human-authorization",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "network-egress-controls",
+      "name": "network-egress-controls",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "hardware-attestation",
+      "name": "hardware-attestation",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "cyber-security-audit",
+      "name": "cyber-security-audit",
+      "category": "security",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "batna",
+      "name": "BATNA",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "tco",
+      "name": "TCO",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "finops",
+      "name": "FinOps",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "mlops",
+      "name": "MLOps",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "negotiation",
+      "name": "negotiation",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "stakeholder-management",
+      "name": "stakeholder-management",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "conflict-resolution",
+      "name": "conflict-resolution",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "technology-radar",
+      "name": "technology-radar",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "critical-thinking",
+      "name": "critical-thinking",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "responsible-automation",
+      "name": "responsible-automation",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "cost-quality-latency-tradeoff",
+      "name": "cost-quality-latency-tradeoff",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "privacy-compliance",
+      "name": "privacy-compliance",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "knowledge-consolidation",
+      "name": "knowledge-consolidation",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "sla-slo",
+      "name": "SLA-SLO",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "goal-optimization",
+      "name": "goal-optimization",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    },
+    {
+      "id": "risk-assessment",
+      "name": "risk-assessment",
+      "category": "product_and_business",
+      "implementation_status": "requirements_only",
+      "validation": "not_implemented",
+      "notes": "Triage against existing OMEGA assets and primary sources before implementation."
+    }
+  ],
+  "important_homonyms": {
+    "DGM": [
+      "Darwin Gödel Machine/self-improving agent",
+      "Deep Generative Models: GAN/VAE/diffusion; DIFFERENT technology"
+    ],
+    "OESI": [
+      "User-defined, meaning not independently verified"
+    ],
+    "SEGPA": [
+      "User-defined, meaning not independently verified"
+    ],
+    "G-Memory": [
+      "Use the explicit graph interaction/query/insight hierarchy from OMEGA documentation; not a generic global cache"
+    ],
+    "SHIMI": [
+      "Semantic hierarchical indexing pattern; do not claim a verified SHIMI paper implementation"
+    ]
+  }
+}

@@ -1,0 +1,1135 @@
+{
+  "schema_version": "1.0",
+  "count": 141,
+  "note": "Inventory of candidates, products, protocols and systems. Entry is not proof of runtime integration or license suitability. Category-specific choices need compatibility checks.",
+  "frameworks": [
+    {
+      "id": "a2a",
+      "name": "A2A",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "activepieces",
+      "name": "Activepieces",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "agent-protocol",
+      "name": "Agent Protocol",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "agentbench",
+      "name": "AgentBench",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "agentscope",
+      "name": "AgentScope",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "agno",
+      "name": "Agno",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "aider",
+      "name": "Aider",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "apache-age",
+      "name": "Apache AGE",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "apache-airflow",
+      "name": "Apache Airflow",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "atomic-agents",
+      "name": "Atomic Agents",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "autogpt",
+      "name": "AutoGPT",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "babyagi",
+      "name": "BabyAGI",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "bandit",
+      "name": "Bandit",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "beeai-framework",
+      "name": "BeeAI Framework",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "botpress",
+      "name": "Botpress",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "camel",
+      "name": "CAMEL",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "celery",
+      "name": "Celery",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "chatdev",
+      "name": "ChatDev",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "chroma",
+      "name": "Chroma",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "consul",
+      "name": "Consul",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "crewai",
+      "name": "CrewAI",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "cybench",
+      "name": "CyBench",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "dagster",
+      "name": "Dagster",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "dapr",
+      "name": "Dapr",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "data-interpreter",
+      "name": "Data Interpreter",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "devin",
+      "name": "Devin",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "dspy",
+      "name": "DSPy",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "eclipse-zenoh",
+      "name": "Eclipse Zenoh",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "elizaos",
+      "name": "ElizaOS",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "eureka",
+      "name": "Eureka",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "faiss",
+      "name": "FAISS",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "fipa-acl",
+      "name": "FIPA-ACL",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "firecracker",
+      "name": "Firecracker",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "flowise",
+      "name": "Flowise",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "ftp",
+      "name": "FTP",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "gaia",
+      "name": "GAIA",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "garak",
+      "name": "Garak",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "generative-agents",
+      "name": "Generative Agents",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "google-adk",
+      "name": "Google ADK",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "graphrag",
+      "name": "GraphRAG",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "griptape",
+      "name": "Griptape",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "grpc",
+      "name": "gRPC",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "gvisor",
+      "name": "gVisor",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "haystack",
+      "name": "Haystack",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "haystack-rag",
+      "name": "Haystack RAG",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "http",
+      "name": "HTTP",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "imandrax",
+      "name": "ImandraX",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "instructor",
+      "name": "Instructor",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "json-schema",
+      "name": "JSON Schema",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "julep",
+      "name": "Julep",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "k8sgpt",
+      "name": "K8sGPT",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "kafka",
+      "name": "Kafka",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "lancedb",
+      "name": "LanceDB",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "langchain",
+      "name": "LangChain",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "langflow",
+      "name": "Langflow",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "langroid",
+      "name": "Langroid",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "letta",
+      "name": "Letta",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "letta-memory",
+      "name": "Letta memory",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "litert",
+      "name": "LiteRT",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "llama-cpp",
+      "name": "llama.cpp",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "llamaagents",
+      "name": "LlamaAgents",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "llamaindex",
+      "name": "LlamaIndex",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "magentic-one",
+      "name": "Magentic-One",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "mastra",
+      "name": "Mastra",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "mcp",
+      "name": "MCP",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "mcp-apps",
+      "name": "MCP Apps",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "melty",
+      "name": "Melty",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "metagpt",
+      "name": "MetaGPT",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "microsoft-autogen",
+      "name": "Microsoft AutoGen",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "milvus",
+      "name": "Milvus",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "mlc-llm",
+      "name": "MLC LLM",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "mlx",
+      "name": "MLX",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "nats",
+      "name": "NATS",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "neo4j",
+      "name": "Neo4j",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "node-red",
+      "name": "Node-RED",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "oauth-2-1",
+      "name": "OAuth 2.1",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "onnx-runtime",
+      "name": "ONNX Runtime",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "open-policy-agent",
+      "name": "Open Policy Agent",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "openai-agents-sdk",
+      "name": "OpenAI Agents SDK",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "openai-swarm-legacy",
+      "name": "OpenAI Swarm (legacy)",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "openapi",
+      "name": "OpenAPI",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "opentelemetry",
+      "name": "OpenTelemetry",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "oscopilot",
+      "name": "OSCopilot",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "owasp-llm-top-10",
+      "name": "OWASP LLM Top 10",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "pandasai",
+      "name": "PandasAI",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "pearai",
+      "name": "PearAI",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "pentestgpt",
+      "name": "PentestGPT",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "pipedream",
+      "name": "Pipedream",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "power-automate",
+      "name": "Power Automate",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "prefect",
+      "name": "Prefect",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "purple-llama",
+      "name": "Purple Llama",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "pydanticai",
+      "name": "PydanticAI",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "qdrant",
+      "name": "Qdrant",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "rabbitmq",
+      "name": "RabbitMQ",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "ray",
+      "name": "Ray",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "rdf-owl",
+      "name": "RDF/OWL",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "redis-streams",
+      "name": "Redis Streams",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "roo-code",
+      "name": "Roo Code",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "semantic-kernel",
+      "name": "Semantic Kernel",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "semantic-router",
+      "name": "Semantic Router",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "sftp",
+      "name": "SFTP",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "smbv2",
+      "name": "SMBv2",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "smbv3",
+      "name": "SMBv3",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "smolagents",
+      "name": "Smolagents",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "ssh",
+      "name": "SSH",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "strands-agents",
+      "name": "Strands Agents",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "swe-agent",
+      "name": "SWE-agent",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "swe-bench",
+      "name": "SWE-bench",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "taskweaver",
+      "name": "TaskWeaver",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "temporal",
+      "name": "Temporal",
+      "category": "orchestration_and_scaling",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "tensorrt-llm",
+      "name": "TensorRT-LLM",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "tgi",
+      "name": "TGI",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "tls",
+      "name": "TLS",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "triton-inference-server",
+      "name": "Triton Inference Server",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "trivy",
+      "name": "Trivy",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "vllm",
+      "name": "vLLM",
+      "category": "edge_inference",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "voiceflow",
+      "name": "Voiceflow",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "voltagent",
+      "name": "VoltAgent",
+      "category": "agent_framework",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "voyager",
+      "name": "Voyager",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "wasm",
+      "name": "WASM",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "weaviate",
+      "name": "Weaviate",
+      "category": "memory_retrieval",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "webarena",
+      "name": "WebArena",
+      "category": "security_evaluation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "websocket",
+      "name": "WebSocket",
+      "category": "protocol",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "webvoyager",
+      "name": "WebVoyager",
+      "category": "agent_implementation",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "category": "ide_and_nocode",
+      "status": "candidate_unverified",
+      "integration": "not_connected",
+      "role": "catalogue_reference"
+    }
+  ]
+}

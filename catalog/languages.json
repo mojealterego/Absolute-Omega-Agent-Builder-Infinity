@@ -1,0 +1,2063 @@
+{
+  "schema_version": "1.0",
+  "count": 257,
+  "support_disclaimer": "Lista możliwości wyboru. Każdy wpis catalog_only nie oznacza działającego generatora, kompilatora ani wsparcia frameworka; wymaga adaptera i testów.",
+  "languages": [
+    {
+      "id": "05ab1e",
+      "name": "05AB1E",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "abap",
+      "name": "ABAP",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "actionscript",
+      "name": "ActionScript",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ada",
+      "name": "Ada",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "agda",
+      "name": "Agda",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "aiken",
+      "name": "Aiken",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "alice",
+      "name": "Alice",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "alloy",
+      "name": "Alloy",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ampl",
+      "name": "AMPL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "angelscript",
+      "name": "AngelScript",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "apex",
+      "name": "Apex",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "apl",
+      "name": "APL",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "applescript",
+      "name": "AppleScript",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "arduino-wiring",
+      "name": "Arduino Wiring",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "arnoldc",
+      "name": "ArnoldC",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "autohotkey",
+      "name": "AutoHotkey",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "autoit",
+      "name": "AutoIt",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "autolisp",
+      "name": "AutoLISP",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "awk",
+      "name": "AWK",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "bash",
+      "name": "Bash",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "basic",
+      "name": "BASIC",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "bazel-starlark",
+      "name": "Bazel Starlark",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "befunge",
+      "name": "Befunge",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "bibtex",
+      "name": "BibTeX",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "bluespec-systemverilog",
+      "name": "Bluespec SystemVerilog",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "boo",
+      "name": "Boo",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "bqn",
+      "name": "BQN",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "brainfuck",
+      "name": "Brainfuck",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "c-plus-plus",
+      "name": "C++",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "c-sharp",
+      "name": "C#",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "cadence",
+      "name": "Cadence",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "cairo",
+      "name": "Cairo",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "chapel",
+      "name": "Chapel",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "chef",
+      "name": "Chef",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "chisel",
+      "name": "Chisel",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "clarity",
+      "name": "Clarity",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "clojure",
+      "name": "Clojure",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "clojurescript",
+      "name": "ClojureScript",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "cmake",
+      "name": "CMake",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "cobol",
+      "name": "COBOL",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "common-lisp",
+      "name": "Common Lisp",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "component-pascal",
+      "name": "Component Pascal",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "coq-gallina",
+      "name": "Coq Gallina",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "crystal",
+      "name": "Crystal",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "csound",
+      "name": "Csound",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "cuda-c-plus-plus",
+      "name": "CUDA C++",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "cue",
+      "name": "CUE",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "curry",
+      "name": "Curry",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "cypher",
+      "name": "Cypher",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "d",
+      "name": "D",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "datalog",
+      "name": "Datalog",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "delphi",
+      "name": "Delphi",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "dhall",
+      "name": "Dhall",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "dockerfile",
+      "name": "Dockerfile",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "dylan",
+      "name": "Dylan",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "earthly",
+      "name": "Earthly",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "easylanguage",
+      "name": "EasyLanguage",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "effekt",
+      "name": "Effekt",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "eiffel",
+      "name": "Eiffel",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "elm",
+      "name": "Elm",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "emacs-lisp",
+      "name": "Emacs Lisp",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "erlang",
+      "name": "Erlang",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "expect",
+      "name": "Expect",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "f-sharp",
+      "name": "F#",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "factor",
+      "name": "Factor",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "fant-m",
+      "name": "Fantøm",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "faust",
+      "name": "Faust",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "fish",
+      "name": "Fish",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "forth",
+      "name": "Forth",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "fortran",
+      "name": "Fortran",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "fractran",
+      "name": "FRACTRAN",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "free-pascal",
+      "name": "Free Pascal",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "gamemaker-language",
+      "name": "GameMaker Language",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "gams",
+      "name": "GAMS",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "gap",
+      "name": "GAP",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "gdscript",
+      "name": "GDScript",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "gleam",
+      "name": "Gleam",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "glsl",
+      "name": "GLSL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "gnu-octave",
+      "name": "GNU Octave",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "golfscript",
+      "name": "GolfScript",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "gql",
+      "name": "GQL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "gradle-groovy-dsl",
+      "name": "Gradle Groovy DSL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "gradle-kotlin-dsl",
+      "name": "Gradle Kotlin DSL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "grain",
+      "name": "Grain",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "groovy",
+      "name": "Groovy",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "guile",
+      "name": "Guile",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "hack",
+      "name": "Hack",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "haskell",
+      "name": "Haskell",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "haxe",
+      "name": "Haxe",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "hcl",
+      "name": "HCL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "hexagony",
+      "name": "Hexagony",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "hlsl",
+      "name": "HLSL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "huff",
+      "name": "Huff",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "hy",
+      "name": "Hy",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "icon",
+      "name": "Icon",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "idris",
+      "name": "Idris",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "idris-2",
+      "name": "Idris 2",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "inform-7",
+      "name": "Inform 7",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ink",
+      "name": "Ink",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "intercal",
+      "name": "INTERCAL",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "io",
+      "name": "Io",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "isabelle-isar",
+      "name": "Isabelle Isar",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ispc",
+      "name": "ISPC",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "j",
+      "name": "J",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "janet",
+      "name": "Janet",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "jcl",
+      "name": "JCL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "jelly",
+      "name": "Jelly",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "jenkins-pipeline",
+      "name": "Jenkins Pipeline",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "jsonnet",
+      "name": "Jsonnet",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "julia",
+      "name": "Julia",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "jxa",
+      "name": "JXA",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "k",
+      "name": "K",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "koka",
+      "name": "Koka",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "latex",
+      "name": "LaTeX",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "lean-4",
+      "name": "Lean 4",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ligo",
+      "name": "LIGO",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "limbo",
+      "name": "Limbo",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "logo",
+      "name": "Logo",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "lolcode",
+      "name": "LOLCODE",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "luau",
+      "name": "Luau",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "m",
+      "name": "M",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "magma",
+      "name": "Magma",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "malbolge",
+      "name": "Malbolge",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "maple",
+      "name": "Maple",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "matlab",
+      "name": "MATLAB",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "maxima",
+      "name": "Maxima",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "meson",
+      "name": "Meson",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "metal-shading-language",
+      "name": "Metal Shading Language",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "michelson",
+      "name": "Michelson",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "minizinc",
+      "name": "MiniZinc",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "modula-2",
+      "name": "Modula-2",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "modula-3",
+      "name": "Modula-3",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "monkey-x",
+      "name": "Monkey X",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "move",
+      "name": "Move",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "mql4",
+      "name": "MQL4",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "mql5",
+      "name": "MQL5",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "neko",
+      "name": "Neko",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "nim",
+      "name": "Nim",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "nimscript",
+      "name": "NimScript",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "nix",
+      "name": "Nix",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "oberon",
+      "name": "Oberon",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "object-pascal",
+      "name": "Object Pascal",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "objective-c",
+      "name": "Objective-C",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "objective-c-plus-plus",
+      "name": "Objective-C++",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ocaml",
+      "name": "OCaml",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ook",
+      "name": "Ook!",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "opencl-c",
+      "name": "OpenCL C",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "openedge-abl",
+      "name": "OpenEdge ABL",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "openscad",
+      "name": "OpenSCAD",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "oz",
+      "name": "Oz",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "p",
+      "name": "P",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "pascal",
+      "name": "Pascal",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "peoplecode",
+      "name": "PeopleCode",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "pharo",
+      "name": "Pharo",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "picolisp",
+      "name": "PicoLisp",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "piet",
+      "name": "Piet",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "pine-script",
+      "name": "Pine Script",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "pl-pgsql",
+      "name": "PL/pgSQL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "pl-sql",
+      "name": "PL/SQL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "pony",
+      "name": "Pony",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "postscript",
+      "name": "PostScript",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "pov-ray-sdl",
+      "name": "POV-Ray SDL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "powershell",
+      "name": "PowerShell",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "processing",
+      "name": "Processing",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "prolog",
+      "name": "Prolog",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "promela",
+      "name": "Promela",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "pure-data",
+      "name": "Pure Data",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "purescript",
+      "name": "PureScript",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "pyth",
+      "name": "Pyth",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "q",
+      "name": "Q",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "qml",
+      "name": "QML",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "r",
+      "name": "R",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "racket",
+      "name": "Racket",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "reasonml",
+      "name": "ReasonML",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "rebol",
+      "name": "Rebol",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "red-system",
+      "name": "Red/System",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "rego",
+      "name": "Rego",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ren-py-script",
+      "name": "Ren'Py Script",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "rescript",
+      "name": "ReScript",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "rexx",
+      "name": "Rexx",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ring",
+      "name": "Ring",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "roc",
+      "name": "Roc",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "rockstar",
+      "name": "Rockstar",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "rpg-iv",
+      "name": "RPG IV",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "sagemath",
+      "name": "SageMath",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "sas",
+      "name": "SAS",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "scala",
+      "name": "Scala",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "scheme",
+      "name": "Scheme",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "scratch",
+      "name": "Scratch",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "sed",
+      "name": "Sed",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "seed7",
+      "name": "Seed7",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "self",
+      "name": "Self",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "shakespeare-programming-language",
+      "name": "Shakespeare Programming Language",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "ski-combinator-calculus",
+      "name": "SKI Combinator Calculus",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "smalltalk",
+      "name": "Smalltalk",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "snap",
+      "name": "Snap!",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "solidity",
+      "name": "Solidity",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "spark",
+      "name": "SPARK",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "sparql",
+      "name": "SPARQL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "spss-syntax",
+      "name": "SPSS Syntax",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "squirrel",
+      "name": "Squirrel",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "standard-ml",
+      "name": "Standard ML",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "stata",
+      "name": "Stata",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "supercollider",
+      "name": "SuperCollider",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "sway",
+      "name": "Sway",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "systemc",
+      "name": "SystemC",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "systemverilog",
+      "name": "SystemVerilog",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "t-sql",
+      "name": "T-SQL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "tcl",
+      "name": "Tcl",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "tex",
+      "name": "TeX",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "tla-plus",
+      "name": "TLA+",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "twine-sugarcube",
+      "name": "Twine SugarCube",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "uiua",
+      "name": "Uiua",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "unicon",
+      "name": "Unicon",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "unison",
+      "name": "Unison",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "unlambda",
+      "name": "Unlambda",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "unrealscript",
+      "name": "UnrealScript",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "v",
+      "name": "V",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "vba",
+      "name": "VBA",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "vbscript",
+      "name": "VBScript",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "verilog",
+      "name": "Verilog",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "verse",
+      "name": "Verse",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "vhdl",
+      "name": "VHDL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "visual-basic-net",
+      "name": "Visual Basic .NET",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "vyper",
+      "name": "Vyper",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "wgsl",
+      "name": "WGSL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "whitespace",
+      "name": "Whitespace",
+      "family": "experimental",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "wolfram-language",
+      "name": "Wolfram Language",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "x-plus-plus",
+      "name": "X++",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "x10",
+      "name": "X10",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "xpath",
+      "name": "XPath",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "xquery",
+      "name": "XQuery",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "xslt",
+      "name": "XSLT",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "yul",
+      "name": "Yul",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "zig",
+      "name": "Zig",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "zpl",
+      "name": "ZPL",
+      "family": "data_dsl",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    },
+    {
+      "id": "zsh",
+      "name": "Zsh",
+      "family": "general",
+      "status": "catalog_only",
+      "runtime_adapter": null,
+      "validation": "not_executed"
+    }
+  ]
+}

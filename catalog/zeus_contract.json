@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "name": "AGENT ARCHITEKT OMEGA ZEUS INFINITY",
+  "implementation_status": "ON_HOLD_AWAITING_USER_MATERIAL",
+  "generated_artifacts": [],
+  "agent_file_created": false,
+  "priority": "First agent to be built after the user explicitly releases hold and supplies remaining source material",
+  "responsibilities": [
+    "architecture & requirements triage",
+    "agent/meta-agent/MAS/swarm/legion creation",
+    "skills/tools/hooks/plugins creation",
+    "MCP gateways and servers",
+    "FTP/SFTP/SMBv2/SMBv3 servers and network drives with security gates",
+    "framework selection, composition and new framework authoring",
+    "sandbox selection",
+    "orchestration and communication",
+    "registry with detailed descriptions, capabilities and provenance",
+    "tests/QA/adversarial gates",
+    "versions and evidence/rollback"
+  ],
+  "hold_reason": "User explicitly instructed: do not create Zeus yet; more material forthcoming.",
+  "exit_criteria": [
+    "User explicit command to start Zeus creation",
+    "Remaining materials received and reviewed",
+    "Approved architecture and acceptance tests"
+  ]
+}

@@ -1,0 +1,1 @@
+{"build_type":"agent_legion","implementation":"code","framework_mode":"mixed","frameworks":["langgraph","crewai"],"language":"rust","nocode_platform":null,"target_build_type":null}

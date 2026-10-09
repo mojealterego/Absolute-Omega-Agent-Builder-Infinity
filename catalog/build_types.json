@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "readiness": "selection-only",
+  "build_types": [
+    {
+      "id": "agent_code",
+      "label": "Agent — Code",
+      "kind": "artifact",
+      "allowed_implementations": [
+        "code"
+      ],
+      "generated_agent": false
+    },
+    {
+      "id": "agent_nocode",
+      "label": "Agent — No-Code",
+      "kind": "artifact",
+      "allowed_implementations": [
+        "nocode"
+      ],
+      "generated_agent": false
+    },
+    {
+      "id": "agent_hybrid",
+      "label": "Agent — Hybrid",
+      "kind": "artifact",
+      "allowed_implementations": [
+        "hybrid"
+      ],
+      "generated_agent": false
+    },
+    {
+      "id": "meta_agent",
+      "label": "Meta-agent",
+      "kind": "artifact",
+      "allowed_implementations": [
+        "code",
+        "nocode",
+        "hybrid"
+      ],
+      "generated_agent": false
+    },
+    {
+      "id": "agent_system",
+      "label": "System agentowy",
+      "kind": "artifact",
+      "allowed_implementations": [
+        "code",
+        "nocode",
+        "hybrid"
+      ],
+      "generated_agent": false
+    },
+    {
+      "id": "agent_orchestration",
+      "label": "Orkiestracja agentowa",
+      "kind": "artifact",
+      "allowed_implementations": [
+        "code",
+        "nocode",
+        "hybrid"
+      ],
+      "generated_agent": false
+    },
+    {
+      "id": "agent_swarm",
+      "label": "Rój agentów",
+      "kind": "artifact",
+      "allowed_implementations": [
+        "code",
+        "nocode",
+        "hybrid"
+      ],
+      "generated_agent": false
+    },
+    {
+      "id": "agent_legion",
+      "label": "Legion agentów",
+      "kind": "artifact",
+      "allowed_implementations": [
+        "code",
+        "nocode",
+        "hybrid"
+      ],
+      "generated_agent": false
+    },
+    {
+      "id": "framework_fixed",
+      "label": "Framework — sztywny",
+      "kind": "framework_policy",
+      "allowed_implementations": [
+        "code",
+        "nocode",
+        "hybrid"
+      ],
+      "generated_agent": false
+    },
+    {
+      "id": "framework_mixed",
+      "label": "Framework — mieszany",
+      "kind": "framework_policy",
+      "allowed_implementations": [
+        "code",
+        "nocode",
+        "hybrid"
+      ],
+      "generated_agent": false
+    }
+  ],
+  "nocode_platforms": [
+    "n8n",
+    "Node-RED",
+    "Flowise",
+    "Dify",
+    "Langflow",
+    "Make",
+    "Zapier",
+    "Power Automate",
+    "Activepieces",
+    "Pipedream",
+    "Botpress",
+    "Voiceflow"
+  ],
+  "framework_policy_note": "Sztywny = jeden wybrany framework; mieszany = co najmniej dwa jawnie wybrane; automatic wymaga późniejszego procesu doboru i weryfikacji."
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "builder_output_targets": [
+    {
+      "id": "agent",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "meta_agent",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "agent_system",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "agent_orchestrator",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "agent_swarm",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "agent_legion",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "skill",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "tool",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "hook",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "plugin",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "mcp_server",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "framework",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "sandbox",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "ftp_server",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "sftp_server",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "smbv2_server",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "smbv3_server",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "network_drive",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "agent_registry",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "agent_capability_profile",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    },
+    {
+      "id": "communication_fabric",
+      "status": "requirements_only",
+      "security": "approval_required_before_external_write"
+    }
+  ],
+  "protocols": [
+    {
+      "id": "mcp",
+      "role": "model-to-tool transport / context interfaces",
+      "claim": "protocol only, not a security proof"
+    },
+    {
+      "id": "zenoh",
+      "role": "low-latency pub/sub/query for distributed edge",
+      "claim": "No universal sub-ms guarantee, measure p50/p95/p99 in real topology"
+    },
+    {
+      "id": "sftp",
+      "role": "encrypted file transfer over SSH",
+      "claim": "requires credential and path security"
+    },
+    {
+      "id": "ftp",
+      "role": "unencrypted legacy file transfer",
+      "claim": "disabled by default for remote/public networks; require explicit approval and isolation"
+    },
+    {
+      "id": "smbv2",
+      "role": "SMB-compatible file shares",
+      "claim": "legacy protocol; prefer SMBv3 for new network designs"
+    },
+    {
+      "id": "smbv3",
+      "role": "encrypted-capable network shares",
+      "claim": "encryption and signing must be explicitly configured and tested"
+    },
+    {
+      "id": "fipa_acl",
+      "role": "typed communicative acts among agents",
+      "claim": "message semantics need concrete implementations"
+    },
+    {
+      "id": "agent_protocol",
+      "role": "agent task/step API",
+      "claim": "version and provider compatibility must be established"
+    }
+  ],
+  "nonfunctional_targets": {
+    "zenoh_latency_p99": "< 1 ms (aspiration only; not demonstrated)",
+    "availability": "SLO to be specified",
+    "security": "zero trust by default",
+    "cost": "FinOps budgets required",
+    "audit": "immutable evidence & data provenance",
+    "concurrency": "bounded queues, per-agent limits"
+  }
+}

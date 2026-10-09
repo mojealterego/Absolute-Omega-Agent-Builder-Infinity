@@ -1,0 +1,1 @@
+{"build_type":"agent_hybrid","implementation":"hybrid","framework_mode":"mixed","frameworks":["langgraph","crewai"],"language":"python","nocode_platform":"Node-RED","target_build_type":null}
