@@ -1,6 +1,6 @@
 """Allowlisted, offline mathematical computation; does not execute user code."""
 from . import linear,logic,graph,probability,statistics,information
-from .. import preprocessing
+from .. import preprocessing, ml_validation, ml_embeddings, ml_visualization, ml_governance
 
 class MathAPIError(ValueError):
     pass
@@ -70,7 +70,31 @@ OPERATIONS = {
     "preprocessing.iqr_bounds":(preprocessing.iqr_bounds,("values",)),
     "preprocessing.outlier_flags":(preprocessing.outlier_flags,("values","bounds")),
     "preprocessing.pca_fit":(preprocessing.pca_fit,("matrix","n_components")),
-    "preprocessing.pca_transform":(preprocessing.pca_transform,("matrix","model"))
+    "preprocessing.pca_transform":(preprocessing.pca_transform,("matrix","model")),
+    "validation.split_indices":(ml_validation.split_indices,("n","validation_ratio","test_ratio","seed","labels")),
+    "validation.kfold_indices":(ml_validation.kfold_indices,("n","folds","seed","labels")),
+    "validation.leave_one_out":(ml_validation.leave_one_out,("n",)),
+    "validation.classification_report":(ml_validation.classification_report,("truth","predicted")),
+    "validation.ks_distance":(ml_validation.ks_distance,("reference","current")),
+    "validation.psi":(ml_validation.psi,("reference","current","bins")),
+    "validation.smote_train":(ml_validation.smote_train,("matrix","labels","neighbors","seed")),
+    "validation.active_learning_uncertainty":(ml_validation.active_learning_uncertainty,("probabilities","top_k")),
+    "embeddings.lda_fit":(ml_embeddings.lda_fit,("train_matrix","train_labels","components")),
+    "embeddings.lda_transform":(ml_embeddings.lda_transform,("matrix","model")),
+    "embeddings.tsne":(ml_embeddings.tsne_embedding,("matrix","dimensions","perplexity","seed")),
+    "embeddings.umap":(ml_embeddings.umap_embedding,("matrix","dimensions","neighbors","seed")),
+    "embeddings.autoencoder_fit":(ml_embeddings.autoencoder_fit,("train_matrix","latent_dim","epochs","rate","seed")),
+    "embeddings.autoencoder_transform":(ml_embeddings.autoencoder_transform,("matrix","model")),
+    "embeddings.autoencoder_reconstruct":(ml_embeddings.autoencoder_reconstruct,("matrix","model")),
+    "visualization.histogram":(ml_visualization.histogram,("values","bins")),
+    "visualization.boxplot_summary":(ml_visualization.boxplot_summary,("values",)),
+    "visualization.scatter":(ml_visualization.scatter_points,("x","y")),
+    "visualization.heatmap":(ml_visualization.heatmap_matrix,("rows",)),
+    "governance.dataset_quality":(ml_governance.dataset_quality,("rows",)),
+    "governance.split_overlap":(ml_governance.split_overlap,("train","validation","test")),
+    "governance.weak_supervision":(ml_governance.weak_supervision,("rows","column","label_keywords")),
+    "governance.classification_conflicts":(ml_governance.classification_conflicts,("features","labels")),
+    "governance.concept_drift_report":(ml_governance.concept_drift_report,("previous_true","previous_pred","current_true","current_pred"))
 }
 
 def calculate(request):
@@ -87,6 +111,8 @@ def calculate(request):
         result=function(**kwargs)
     except (linear.MathError,logic.LogicError,graph.GraphError,
             probability.ProbabilityError,preprocessing.PreprocessingError,
+            ml_validation.ValidationError,ml_embeddings.EmbeddingError,
+            ml_governance.GovernanceError,
             OverflowError,ZeroDivisionError) as exc:
         raise MathAPIError(str(exc)) from exc
     if op=="linear.lu":

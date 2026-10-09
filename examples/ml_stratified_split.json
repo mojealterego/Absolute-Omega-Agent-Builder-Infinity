@@ -1,0 +1,23 @@
+{
+  "operation": "validation.split_indices",
+  "args": {
+    "n": 12,
+    "validation_ratio": 0.25,
+    "test_ratio": 0.25,
+    "seed": 42,
+    "labels": [
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "b",
+      "b",
+      "b",
+      "b",
+      "b",
+      "b"
+    ]
+  }
+}

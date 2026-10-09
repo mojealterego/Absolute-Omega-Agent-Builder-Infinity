@@ -10,6 +10,9 @@ requires-python = ">=3.11"
 
 [project.optional-dependencies]
 math = ["numpy>=1.26,<3"]
+ml = ["numpy>=1.26,<3", "scikit-learn>=1.5,<2"]
+umap = ["numpy>=1.26,<3", "scikit-learn>=1.5,<2", "umap-learn>=0.5.7,<1"]
+visual = ["matplotlib>=3.8,<4"]
 
 [tool.setuptools.packages.find]
 include = ["omega_builder*"]

@@ -110,3 +110,16 @@ Uruchomienie: python -m omega_builder math-ops; python -m omega_builder math exa
 - [Dokumentacja i przykłady](docs/STATISTICS_DATA_ENGINEERING.md). Matematyczne API jest wyłącznie offline i jawnie ograniczone.
 
 **Zeus nadal `ON_HOLD_AWAITING_USER_MATERIAL`.**
+
+## ML Evaluation + Embeddings + Governance (2026-10-09)
+
+Kolejny etap Bloków IX/X działa **bez tworzenia Zeusa**.
+
+- [Dokumentacja](docs/ML_EVALUATION_GOVERNANCE.md): train/validation/test z rozłącznymi indeksami, K-fold, Leave-One-Out, próbki warstwowe, raport metryk, treningowe SMOTE, KS/PSI drift, ranking active learning.
+- **LDA**: prawdziwy supervised Linear Discriminant Analysis z `scikit-learn` (opcjonalne `pip install '.[ml]'`). Projekcja nowych danych oparta wyłącznie na parametrach fit z treningu.
+- **t-SNE/UMAP**: prawdziwe implementacje `scikit-learn` / `umap-learn`, wyłącznie exploratory fit_transform; nie mają obietnicy zachowania globalnych odległości.
+- **Autoenkoder**: bounded shallow NumPy neural autoencoder uczony przez backpropagation z pełnym batch; opcjonalne `pip install '.[math]'`. Nie jest model produkcyjny.
+- **Wykresy**: realne podsumowania histogram, boxplot, scatter, heatmap i opcjonalny zapis PNG przez `matplotlib`.
+- **Quality + Security**: analiza braków/duplikatów, treściowego leakage, kontrolowane słabe etykietowanie, HMAC pseudonimizacja (sekret poza repo), maskowanie wybranych identyfikatorów, proste diagnostyki różnic między grupami i sprzeczności etykiet. Nie jest to gwarancja RODO ani pełnej anonimowości.
+
+**Zeus nadal wstrzymany.**

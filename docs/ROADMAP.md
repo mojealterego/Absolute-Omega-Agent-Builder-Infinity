@@ -49,3 +49,7 @@ W fazie 0 można rozwijać **infrastrukturę katalogu**, dokumentację i mechani
 | Data lakehouse ACID, obiektowy storage, GraphRAG, Qdrant, Neo4j, embedding generation | `NOT_IMPLEMENTED` |
 | Monitoring drift, rozkłady wielowymiarowe, strumieniowe przetwarzanie Big Data | `NEXT_STAGE` |
 | ZEUS | **`ON_HOLD_AWAITING_USER_MATERIAL`** |
+
+## Etap ML Evaluation, Embedder i Data Governance
+
+Dostarczono implementacje offline plus opcjonalne biblioteki rzeczywistych algorytmów: podziały i CV, diagnostyka dryfu, SMOTE na train, LDA, t-SNE, UMAP, autoenkoder NumPy, wykresy oraz prywatność i provenance. Status produkcyjnych endpointów danych: NIEGOTOWE. Pełen audyt: [ML_EVALUATION_GOVERNANCE.md](ML_EVALUATION_GOVERNANCE.md). Zeus ON HOLD.
