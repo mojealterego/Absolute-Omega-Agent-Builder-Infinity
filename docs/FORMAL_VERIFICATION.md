@@ -16,6 +16,8 @@ Podstawowym zagrożeniem dla rojów jest przypisanie jednego zadania wielu wykon
 | Fairness / eventual completion przy awarii sieci | Wymaga dalszego modelu | Nie |
 | Exactly-once side effects / Byzantine consensus | **Nieobjęte** | Nie |
 
+Dodano także offline `omega_builder/protocol_model.py` eksplorujący skończony graf stanów ze sprawdzaniem lease/owner/worker i wykrywaniem deadlock; testy nie zastępują TLC/Alloy.
+
 Model checking udowadnia własności tylko wobec jawnie zapisanej specyfikacji, ograniczeń i eksplorowanych stanów, **nie** oznacza matematycznego dowodu braku wszystkich błędów w produkcyjnym roju.
 
 Przed dopuszczeniem do wdrożenia: uruchomić TLC i Alloy, sprawdzić zakres domen (minimum 2 task, 2 workers, rozłączne żądania), zapisać counterexamples i sha narzędzia. Następnie chaos tests i wyścigi na realnych kolejach RPC, w tym retries, late callbacks, egress i cancellation. Dopiero wtedy aktualizować status integracji.

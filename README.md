@@ -81,3 +81,12 @@ Użytkownik zażądał, aby **Zeus był pierwszym projektowanym agentem** po sko
 ## Podstawa i licencje
 
 Nie ma kopiowanych obcych kodów lub modeli. Spis nazw technologii służy wyłącznie ewidencji wymagań. Wersje, licencje, aktywne biblioteki, kompilatory, sprzęt i uprawnienia trzeba sprawdzić przed produkcyjną integracją. Repozytorium rozwijane jest wyłącznie na `main`.
+
+
+## Referencyjne moduły kontrolne (offline, bez Agent/Zeus runtime)
+
+- `omega_builder/finops.py` — testowalny kosztowy wybór providerów Frontier/Edge z fail-closed oraz rejestrowaniem zużycia na podstawie podanych cen; **bez połączenia z API lub billingiem**.
+- `omega_builder/protocol_model.py` — eksploracja ograniczonego grafu stanów przydziałów, brak podwójnego lease i brak terminalnego deadlock w modelu; **nie zastępuje uruchomienia TLC/Alloy**.
+- `tests/test_volume1.py` — testy MARS, Zeusa, FinOps i referencyjnego modelu.
+
+Ważne: dane o jakości i p95 mają pochodzić z pomiarów właściwych dla domeny. Model odrzuca niedopuszczalne API i nie emuluje prawdziwego dostawcy.

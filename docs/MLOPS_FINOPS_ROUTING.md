@@ -29,4 +29,4 @@ Wybierz model minimalizujący `C_m` przy warunkach `Q_m >= Q_min`, `L_m <= L_max
 - **Ochrona kosztów:** limit dzienny, na zadanie, na legiony; blokada gdy brak wystarczającego budget reserve, reconciliation po odpowiedzi.
 - **MLOps:** health, drift, shadow traffic z anonimizacją, testy A/B, raporty błędów i zaobserwowany latency.
 
-**Status:** specyfikacja i testowalny katalog; produkcyjny licznik tokenów, system billingowy, router żądań i modele nie są jeszcze podłączone.
+**Status:** dodany działający **referencyjny, offline** `omega_builder/finops.py` i testy. Brak integracji z prawdziwym API, komercyjnym billingiem, dashboardem czasu rzeczywistego i modelami.
