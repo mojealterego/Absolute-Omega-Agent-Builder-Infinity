@@ -1,4 +1,4 @@
-# ABSOLUTE OMEGA AGENT BUILDER ∞
+# JARVIS OMEGA ∞
 
 **Etap 0 — przyjęcie wiedzy i kontrakt wyboru. Agent ARCHITEKT OMEGA ZEUS INFINITY nie został utworzony.**
 
