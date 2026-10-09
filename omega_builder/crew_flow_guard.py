@@ -131,8 +131,12 @@ def tool_intent(policy,step,tool,args,readonly=True,approved_sha256=None):
             "identity_verified":False,"executed":False}
 
 
-def replay_flow(policy, events):
-    """Recompute event-chain state offline and reject tampered event receipts."""
+def replay_flow(policy, events, expected_sha256=None):
+    """Replay offline; authenticate event log only against independently secured digest.
+
+    Without external expected digest a self-consistent modified log is not
+    distinguishable from legitimate history.
+    """
     if not isinstance(policy,FlowPolicy) or not isinstance(events,(list,tuple)) or len(events)>policy.max_events:
         raise FlowPolicyError("Invalid bounded replay input")
     state=OfflineFlow(policy)
@@ -143,4 +147,8 @@ def replay_flow(policy, events):
         result=state.record(event["step"],event["succeeded"],event["cost_micro_usd"],event["receipt"])
         if result["status"]=="BLOCKED_BUDGET" or not state.audit or state.audit[-1]!=event:
             raise FlowPolicyError("Audit event disagrees with flow policy")
+    if expected_sha256 is not None:
+        if (not isinstance(expected_sha256,str) or len(expected_sha256)!=64
+                or expected_sha256!=state.snapshot()["audit_sha256"]):
+            raise FlowPolicyError("Audit digest differs from independently trusted root")
     return state.snapshot()
