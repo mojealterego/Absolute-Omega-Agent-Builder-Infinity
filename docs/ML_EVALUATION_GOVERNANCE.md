@@ -9,11 +9,12 @@
 | UMAP | omega_builder/ml_embeddings.py | Działający adapter umap-learn; wymaga '.[umap]'; bez gwarancji zachowania globalnych odległości. |
 | Autoenkoder | omega_builder/ml_embeddings.py | Rzeczywiście trenowany niewielki 1-hidden-layer tanh encoder–decoder (NumPy/backprop/SGD), cel MSE. Wymaga normalizacji danych i '.[math]'. |
 | Histogram / box / scatter / heatmap | omega_builder/ml_visualization.py | Statystyki wykresów w Pythonie stdlib, zapis prawdziwego PNG wymaga '.[visual]'. Żadne generowane obrazy nie są symulacjami LLM. |
-| Pearson i Spearman | omega_builder/mathematics/statistics.py, roadmap | Pearson już istnieje. **Spearman do kolejnej iteracji**; współczynnik mierzy monotoniczność w oparciu o rangi. |
+| Pearson i Spearman | omega_builder/mathematics/statistics.py | Oba działające: Spearman oblicza Pearsona na średnich rangach przy remisach; zero-wariancja odrzucana. |
 | Train / validation / test | omega_builder/ml_validation.py | Rozłączne indeksy, seed, stratified; warianty małych klas odrzucane zamiast niejawnie tracić etykiety. Proporcja 80/20 NIE jest obowiązkową stałą. |
 | K-fold / stratified / LOOCV | omega_builder/ml_validation.py | Prawdziwe podziały, bez uczenia modeli przez sam walidator. LOOCV max 1000 rekordów. |
 | Klasyfikacja / imbalance | omega_builder/ml_validation.py | Accuracy, balanced accuracy, macro-F1, precision, recall, confusion matrix. Rzetelna ocena rzadkich klas wymaga odpowiednich metryk. |
-| SMOTE | omega_builder/ml_validation.py | Interpolacja kNN rzeczywistych NUMERYCZNYCH przykładów mniejszości; wyłącznie podzbiór treningowy, wymaga >= k+1 mniejszości. Nie stosować do testu. |
+| SMOTE + under-/oversampling | omega_builder/ml_validation.py | Interpolacja kNN rzeczywistych NUMERYCZNYCH przykładów mniejszości; wyłącznie podzbiór treningowy, wymaga >= k+1 mniejszości. Nie stosować do testu. |
+| Numeryczne dane syntetyczne i augmentacja | omega_builder/ml_validation.py | W pełni reprodukowalne szumy Gaussa na TRAIN i niezależne próbki Gaussa z jawnych parametrów; NIE gwarantują prywatności i zachowania etykiet. |
 | Data drift / Concept drift | omega_builder/ml_validation.py, omega_builder/ml_governance.py | KS two-sample, PSI smoothing reference bins. Concept drift: obserwowana zmiana skuteczności przy dostępnych prawdziwych etykietach, nie dowód przyczynowy. |
 | Feature / data leakage | omega_builder/preprocessing.py, omega_builder/ml_governance.py | Fit-only-on-train i detektor duplikatów pomiędzy splitami; brak dostępu do testowych danych w preprocessingu. |
 | Quality / weak supervision | omega_builder/ml_governance.py | Missing values, duplikaty, weak-label literal keywords (abstain); **nie Snorkel**, nie eksploitacje regex. |
@@ -73,3 +74,4 @@ Xv=preprocessing.transform_numeric([{"x":row[0]} for row in validation],fit)
 - Nawet formalne testy statystyczne nie gwarantują absence of bias, security ani pełnej jakości zbioru.
 
 Zeus: ON_HOLD_AWAITING_USER_MATERIAL.
+**Uzupełnienie bieżące:** testy remisów Spearmana, reproducible random under/oversampling, train-only Gaussian noise augmentation i reference independent Gaussian sampler zostały dodane do matematycznego interfejsu JSON. Nie przedstawiamy tego jako GAN ani pełnego generatora syntetycznych danych dla medycyny.

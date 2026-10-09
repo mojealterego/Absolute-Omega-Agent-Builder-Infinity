@@ -123,3 +123,5 @@ Kolejny etap Bloków IX/X działa **bez tworzenia Zeusa**.
 - **Quality + Security**: analiza braków/duplikatów, treściowego leakage, kontrolowane słabe etykietowanie, HMAC pseudonimizacja (sekret poza repo), maskowanie wybranych identyfikatorów, proste diagnostyki różnic między grupami i sprzeczności etykiet. Nie jest to gwarancja RODO ani pełnej anonimowości.
 
 **Zeus nadal wstrzymany.**
+
+W ostatnim uzupełnieniu wdrożono również **Spearmana z obsługą remisów**, deterministyczny training-only random under/oversampling oraz referencyjny sampler Gaussa i augmentację liczbową z wyraźnymi ostrzeżeniami dotyczącymi prywatności i integralności etykiet.

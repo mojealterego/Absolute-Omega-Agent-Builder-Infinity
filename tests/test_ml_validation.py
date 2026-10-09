@@ -225,5 +225,56 @@ class API(unittest.TestCase):
             calculate({"operation":"governance.pseudonymize","args":{}})
 
 
+
+
+class FurtherAnalytics(unittest.TestCase):
+    def test_spearman_monotonic_nonlinear(self):
+        from omega_builder.mathematics.statistics import spearman,pearson
+        self.assertAlmostEqual(spearman([1,2,3,4],[1,4,9,16]),1.)
+        self.assertLess(pearson([1,2,3,4],[1,4,9,16]),1.)
+
+    def test_spearman_ties(self):
+        from omega_builder.mathematics.statistics import spearman
+        self.assertAlmostEqual(spearman([1,1,3,4],[8,8,4,2]),-1.)
+
+    def test_random_undersample_training(self):
+        data=[[j] for j in range(6)]
+        labels=[0,0,0,0,1,1]
+        result=v.random_undersample_train(data,labels,seed=5)
+        self.assertEqual(result["y"].count(0),2)
+        self.assertEqual(result["y"].count(1),2)
+        self.assertEqual(result,v.random_undersample_train(data,labels,seed=5))
+
+    def test_random_oversample_training(self):
+        result=v.random_oversample_train([[j] for j in range(6)],
+                                         [0,0,0,0,1,1],seed=4)
+        self.assertEqual(result["y"].count(0),4)
+        self.assertEqual(result["y"].count(1),4)
+        self.assertEqual(result["fit_scope"],"training_only")
+
+    def test_reproducible_numeric_augmentation(self):
+        train=[[1.,2.],[3.,4.]]
+        result=v.numeric_noise_augment_train(train,std=.1,seed=5)
+        self.assertEqual(result,v.numeric_noise_augment_train(train,std=.1,seed=5))
+        self.assertEqual(len(result["X"][0]),2)
+        self.assertNotEqual(result["X"],train)
+        with self.assertRaises(v.ValidationError):
+            v.numeric_noise_augment_train(train,std=0,seed=5)
+
+    def test_simulated_numbers_not_guaranteed_private(self):
+        result=v.synthetic_gaussian_reference([0,0],[1,1],n=8,seed=11)
+        self.assertEqual(result,v.synthetic_gaussian_reference([0,0],[1,1],n=8,seed=11))
+        self.assertEqual(len(result["X"]),8)
+        self.assertIn("NOT automatic anonymization",result["privacy_warning"])
+
+    def test_new_whitelisted_math(self):
+        result=calculate({"operation":"statistics.spearman","args":{
+            "x":[1,2,3],"y":[3,6,9]}})
+        self.assertAlmostEqual(result["result"],1.)
+        r=calculate({"operation":"validation.random_oversample_train","args":{
+            "matrix":[[0],[1],[2],[3]],"labels":["A","A","A","B"],"seed":5}})
+        self.assertEqual(r["result"]["y"].count("B"),3)
+
+
 if __name__=="__main__":
     unittest.main()
