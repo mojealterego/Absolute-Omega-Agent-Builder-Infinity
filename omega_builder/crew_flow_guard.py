@@ -79,6 +79,7 @@ class OfflineFlow:
         self.attempts={}
         self.receipts=set()
         self.audit=[]
+        self._last_digest="0"*64
         self.spent=0
         self.status="READY"
 
@@ -103,15 +104,19 @@ class OfflineFlow:
         else:
             nxt=item.next_error
             self.status="FAILED" if nxt is None else "READY"
-        self.audit.append({"step":step,"attempt":attempts,"receipt":receipt_id,
-                           "succeeded":succeeded,"cost_micro_usd":cost,"next":nxt})
+        event={"step":step,"attempt":attempts,"receipt":receipt_id,
+               "succeeded":succeeded,"cost_micro_usd":cost,"next":nxt}
+        self.audit.append(event)
+        # Hash chain is bounded per event; only tamper-evident if the final
+        # digest is independently secured outside the process.
+        self._last_digest=sha256(self._last_digest.encode()+_json_bytes(event)).hexdigest()
         self.current=nxt
         return self.snapshot()
 
     def snapshot(self):
         return {"status":self.status,"current":self.current,"events":len(self.audit),
                 "spent_micro_usd":self.spent,
-                "audit_sha256":sha256(_json_bytes(self.audit)).hexdigest(),
+                "audit_sha256":self._last_digest,
                 "executed_by_library":False}
 
 def tool_intent(policy,step,tool,args,readonly=True,approved_sha256=None):
@@ -124,3 +129,18 @@ def tool_intent(policy,step,tool,args,readonly=True,approved_sha256=None):
     allowed=tool in policy.steps[step].tools and (readonly or approved_sha256==digest)
     return {"eligible_for_separate_executor":allowed,"argument_sha256":digest,
             "identity_verified":False,"executed":False}
+
+
+def replay_flow(policy, events):
+    """Recompute event-chain state offline and reject tampered event receipts."""
+    if not isinstance(policy,FlowPolicy) or not isinstance(events,(list,tuple)) or len(events)>policy.max_events:
+        raise FlowPolicyError("Invalid bounded replay input")
+    state=OfflineFlow(policy)
+    required={"step","attempt","receipt","succeeded","cost_micro_usd","next"}
+    for event in events:
+        if not isinstance(event,dict) or set(event)!=required:
+            raise FlowPolicyError("Malformed audit event")
+        result=state.record(event["step"],event["succeeded"],event["cost_micro_usd"],event["receipt"])
+        if result["status"]=="BLOCKED_BUDGET" or not state.audit or state.audit[-1]!=event:
+            raise FlowPolicyError("Audit event disagrees with flow policy")
+    return state.snapshot()
