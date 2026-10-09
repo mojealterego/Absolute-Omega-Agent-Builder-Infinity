@@ -173,7 +173,7 @@ class Dispatch(unittest.TestCase):
     def test_exact_json(self):
         out=calculate({"operation":"linear.solve_exact","args":{
             "a":[[2,1],[1,-1]],"b":[1,0]}})
-        self.assertTrue(out["verified"])
+        self.assertTrue(out["result"]["verified"])
 
     def test_formula_json(self):
         out=calculate({"operation":"logic.check_validity","args":{
