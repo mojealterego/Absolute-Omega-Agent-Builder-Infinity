@@ -128,3 +128,17 @@ Przykładowa skala podobieństwa wektorów: \(\operatorname{cos}(x,y)=\frac{x\cd
 - Wpisano rodzaje produktów, 257 języków do katalogu wyborów, 141 nazw frameworków/technologii, 133 unikalne wymagania funkcjonalne i blueprinty.
 - Utworzono prosty walidowany kontrakt wyboru, CLI i testy katalogu.
 - **Nie utworzono Zeusa ani żadnego agenta**; brak deployu, połączeń sieciowych, kluczy, serwerów FTP/SFTP/SMB, działań na urządzeniu lub dostępu do zewnętrznej infrastruktury.
+
+## H. Uzupełnienie dokumentem `AGENT BUILDER VOL 1.PDF`
+
+PDF źródłowy liczy 793 strony, z czego 315 ma odmienną treść tekstową. Przyjęto manifest integralności SHA-256 w [VOL1_SOURCE_MANIFEST.md](VOL1_SOURCE_MANIFEST.md). Wpisy z oryginalnego materiału, jak MLOps, Bellman, SNN, Cognitive Core, orkiestracja i sandbox, zostają zachowane; nowe rozszerzenia użytkownika zapisano w osobnych rozdziałach:
+
+1. MARS — trzy możliwe produkty, wymagające identyfikacji.
+2. Diagram Mermaid Cognitive Core / Orchestrator / Sandbox.
+3. MLOps i FinOps: telemetryczny koszt tokenów, zarządzanie jakością i dynamiczny routing Frontier/Edge.
+4. TLA+ i Alloy: formalny model lease/ack/failure (dowód wymaga narzędzi TLC/Alloy).
+5. HE/FHE, enklawy, ochrona wag i ograniczenia VRAM.
+6. SNN na neuromorphic hardware + pamięć wektorowa/HDC, testy energii i latencji.
+7. Ujednolicenie zapisu matematycznego i struktury Markdown.
+
+**Bez zmiany zakresu:** nie utworzono agenta Zeus ani innych agentów; stan wstrzymania pozostaje nadrzędny.

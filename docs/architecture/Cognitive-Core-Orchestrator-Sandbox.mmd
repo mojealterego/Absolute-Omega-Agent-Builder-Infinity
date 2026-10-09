@@ -1,0 +1,32 @@
+flowchart TB
+    U["Użytkownik / 10 wyborów Buildera"] --> C["Kontrakt wyboru + katalogi (obecnie działające)"]
+    C --> Z["ZEUS ARCHITEKT INFINITY — SPEC ONLY / HOLD"]
+    C --> B["Projekt architektoniczny: Code / No-Code / Hybrid"]
+    B -. "projekt przyszły" .-> O
+    subgraph ORCH["Warstwa orkiestracji — PLAN / brak runtime"]
+        O["Orchestrator: LangGraph lub alternatywy"] --> G["Decision Gate + state graph"]
+        G --> Q["Kolejka i limity (backpressure)"]
+    end
+    subgraph COG["Warstwa kognitywna — PROJEKT"]
+        M["Cognitive Core / model frontier lub edge"] --> MEM["CoALA / bitemporal / episodic / RAG"]
+        MEM --> M
+    end
+    O <--> M
+    subgraph RUN["Środowisko wykonawcze — NIE WDROŻONO"]
+        SB["Zero-Trust Sandbox: Docker / WASM / gVisor"]
+        TL["Tools / Skills / MCP gateway"]
+        SB <--> TL
+    end
+    Q --> SEC["Adversarial + policy + HITL gate"]
+    SEC --> SB
+    SB --> OBS["Wyniki / provenance / błędy"]
+    OBS --> O
+    OBS --> MEM
+    subgraph OPS["Warstwa MLOps / FinOps — PROJEKT"]
+        COST["Token usage / budget / latency / quality / carbon estimates"]
+        FB["Frontier ↔ Edge fallback / circuit breaker"]
+    end
+    M <--> FB
+    COST --> FB
+    OBS --> COST
+    Z -. "Nie tworzyć ani uruchamiać przed zgodą" .-> O

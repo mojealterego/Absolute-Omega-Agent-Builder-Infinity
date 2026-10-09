@@ -25,3 +25,16 @@ W fazie 0 można rozwijać **infrastrukturę katalogu**, dokumentację i mechani
 - Nie ma definicji semantycznej części nazw badawczych (SEGPA/OESI); uzupełnić ze źródeł użytkownika.
 - Wdrożenia FTP/SFTP/SMB potrzebują planu autoryzacji i parametrów sieciowych.
 - Repozytorium pozostaje **jednogałęziowe: `main`**.
+
+## Dodatkowe bramki Vol. 1 (2026-10-09)
+
+| Kolejny krok | Status |
+|---|---|
+| MARS: rozstrzygnięcie jednoznacznego frameworka i licencji | `WAITING_USER_VARIANT` |
+| Diagram i korekta zapisu Bellmana / FinOps | `DOCUMENTED` |
+| TLA+ model i Alloy model: uruchomienie TLC/Alloy w CI | `MODELS_WRITTEN_RUN_NOT_VERIFIED` |
+| Real-time token metering / budget router Frontier ↔ Edge | `REQUIREMENTS_ONLY` |
+| HE / GPU TEE threat model i benchmark | `RESEARCH_ONLY` |
+| Neuromorphic SNN + vector compute hardware benchmark | `RESEARCH_ONLY` |
+| Przegląd i deduplikacja pełnego 793-stronicowego Vol. 1 | `PARTIAL_INTAKE` |
+| Agent Architekt OMEGA ZEUS Infinity | **`ON_HOLD` — NIE TWORZYĆ** |

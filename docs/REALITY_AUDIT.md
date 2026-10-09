@@ -42,3 +42,11 @@ Fragment otrzymany w rozmowie nie został wprowadzony jako gotowy runtime. Ziden
 10. Brak testów kontraktowych, credential safety, persistent state, izolacji sieci i deploymentu.
 
 Uznawanie tego przykładu za kompletny system produkcyjny byłoby nieuzasadnione. Zostaje w rejestrze koncepcji do czasu odrębnego, zatwierdzonego wdrożenia pełnej implementacji.
+
+## Dodatkowe ostrzeżenia po Vol. 1
+
+- Skrót MARS jest niejednoznaczny: nie wolno uznać MARS Research System, Modular Agent Runtime i Modular Agent with Reflective Search za ten sam projekt.
+- Szyfrowanie homomorficzne nie oznacza bezkosztowego uruchamiania dowolnego LLM w zaszyfrowanym VRAM; TEE i FHE nie są synonimami.
+- TLA+ i Alloy dają dowody tylko dla modelu i sprawdzonych własności. Samo stworzenie plików `.tla`/`.als` nie znaczy, że TLC/Alloy zakończyły się PASS.
+- Porównanie SNN/neuromorphic do GPU CPU wymaga mierzonego end-to-end latency, energii na wynik i benchmarku jakości.
+- Koszt tokenów `0` dla modelu lokalnego nie oznacza kosztu infrastruktury `0`.

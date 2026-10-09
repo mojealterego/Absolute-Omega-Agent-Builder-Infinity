@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "canonical_input": "MARS",
+  "resolution": "ambiguous_requires_user_variant_choice",
+  "lifecycle": "catalog_only_no_adapter",
+  "variants": [
+    {
+      "framework_id": "mars-modular-agent-reflective-search",
+      "full_name": "MARS — Modular Agent with Reflective Search",
+      "source": "https://github.com/jfc43/MARS",
+      "implementation_status": "not_integrated",
+      "license_and_version": "needs_verification"
+    },
+    {
+      "framework_id": "mars-multi-agent-research-system",
+      "full_name": "MARS — Multi-Agent Research System",
+      "source": "https://github.com/mars-fabric/MARS",
+      "implementation_status": "not_integrated",
+      "license_and_version": "needs_verification"
+    },
+    {
+      "framework_id": "mars-modular-agent-runtime-system",
+      "full_name": "MARS — Modular Agent Runtime System",
+      "source": "https://github.com/tejassinghbhati/MARS",
+      "implementation_status": "not_integrated",
+      "license_and_version": "needs_verification"
+    }
+  ],
+  "next_gate": "User identifies the intended MARS implementation, its version and license; do not import code or execute an agent before approval."
+}

@@ -65,6 +65,19 @@ Użytkownik zażądał, aby **Zeus był pierwszym projektowanym agentem** po sko
 - [`docs/REALITY_AUDIT.md`](docs/REALITY_AUDIT.md) — twierdzenia ryzykowne, rozróżnienie wzorców od implementacji, luki dostarczonego przykładu kodu.
 - [`docs/ROADMAP.md`](docs/ROADMAP.md) — kolejne etapy do zatwierdzenia.
 
+## Aktualizacja Vol. 1: MARS / Cognitive Core / Formal / FinOps
+
+- [Źródło Vol. 1 i manifest integralności](docs/VOL1_SOURCE_MANIFEST.md) — 793 strony PDF dostarczone przez użytkownika.
+- [MARS: trzy różne projekty, bez automatycznego utożsamiania](docs/MARS_REGISTRY.md) — 3 pozycje dodane do katalogu frameworków, **bez podłączonych adapterów**.
+- [Diagram Cognitive Core → Orchestrator → Sandbox](docs/architecture/ARCHITECTURE_FLOW.md) i [plik Mermaid](docs/architecture/Cognitive-Core-Orchestrator-Sandbox.mmd).
+- [MLOps / FinOps / kosztowe przełączanie Frontier ↔ Edge](docs/MLOPS_FINOPS_ROUTING.md).
+- [Formal model checking (TLA+ + Alloy)](docs/FORMAL_VERIFICATION.md) — modele źródłowe, bez uruchomionych narzędzi TLC/Alloy.
+- [Szyfrowanie homomorficzne / GPU / enklawy](docs/SECOPS_HOMOMORPHIC_ENCLAVES.md).
+- [Architektura SNN + HDC / wektorowa](docs/NEUROMORPHIC_SNN_VECTOR.md).
+- [Poprawiona notacja matematyczna i formatowanie](docs/MATH_NOTATION_AND_FORMAT.md).
+
+**Stan projektu:** dalsze materiały przyjmowane, Zeus nadal `ON_HOLD_AWAITING_USER_MATERIAL`. Każde dopisanie MARS, modelu formalnego czy narzędzi badawczych oznacza rejestrację architektury, nie utworzenie agenta.
+
 ## Podstawa i licencje
 
 Nie ma kopiowanych obcych kodów lub modeli. Spis nazw technologii służy wyłącznie ewidencji wymagań. Wersje, licencje, aktywne biblioteki, kompilatory, sprzęt i uprawnienia trzeba sprawdzić przed produkcyjną integracją. Repozytorium rozwijane jest wyłącznie na `main`.

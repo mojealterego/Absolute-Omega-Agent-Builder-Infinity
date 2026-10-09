@@ -55,6 +55,12 @@ for category,raw in framework_groups.items():
     if slug in fseen: slug=category+'-'+slug
     fseen.add(slug)
     frameworks.append({'id':slug,'name':name,'category':category,'status':'candidate_unverified','integration':'not_connected','role':'catalogue_reference'})
+# Three distinct MARS projects: do not resolve the ambiguous bare name silently.
+frameworks.extend([
+    {"id":"mars-modular-agent-reflective-search","name":"MARS — Modular Agent with Reflective Search","category":"agent_framework","status":"candidate_unverified","integration":"not_connected","role":"research_reference","source_url":"https://github.com/jfc43/MARS","notes":"Budget-aware MCTS, modular construction, comparative reflective memory. Identity separately selectable."},
+    {"id":"mars-multi-agent-research-system","name":"MARS — Multi-Agent Research System","category":"agent_framework","status":"candidate_unverified","integration":"not_connected","role":"research_reference","source_url":"https://github.com/mars-fabric/MARS","notes":"Research multi-agent workflows, AG2 ecosystem; separate project from reflective-search MARS."},
+    {"id":"mars-modular-agent-runtime-system","name":"MARS — Modular Agent Runtime System","category":"agent_framework","status":"candidate_unverified","integration":"not_connected","role":"research_reference","source_url":"https://github.com/tejassinghbhati/MARS","notes":"Experimental persistent tool-mediated research runtime; not a verified production adapter."}
+])
 frameworks.sort(key=lambda x:x['id'])
 dump('frameworks.json',{'schema_version':'1.0','count':len(frameworks),'note':'Inventory of candidates, products, protocols and systems. Entry is not proof of runtime integration or license suitability. Category-specific choices need compatibility checks.', 'frameworks':frameworks})
 

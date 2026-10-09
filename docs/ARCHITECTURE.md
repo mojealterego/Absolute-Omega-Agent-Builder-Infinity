@@ -75,3 +75,14 @@ Rekord bitemporalny powinien przechowywać `valid_from`, `valid_to`, `recorded_a
 `user intent → normalized contract → compatibility check → bounded proposal → sandbox → tests → security/evals → approval → commit main → CI → observed release → audit/rollback`
 
 Stan `ON_HOLD` Zeusa przerwie łańcuch przed generacją plików wykonawczych niezależnie od powodzenia testów katalogu.
+
+## 6. Diagram przepływu i uzupełnienia Vol. 1
+
+- [Mermaid — Cognitive Core / Orchestrator / Sandbox](architecture/ARCHITECTURE_FLOW.md).
+- [MARS: rejestr wariantów](MARS_REGISTRY.md).
+- [Monitoring kosztowy i failover Frontier / Edge](MLOPS_FINOPS_ROUTING.md).
+- [TLA+ / Alloy: plan weryfikacji protokołu](FORMAL_VERIFICATION.md).
+- [Homomorphic / TEE: granice poufności i bezpieczeństwa wag](SECOPS_HOMOMORPHIC_ENCLAVES.md).
+- [SNN / neuromorphic + vector memory](NEUROMORPHIC_SNN_VECTOR.md).
+- [Formuły i standard Markdown](MATH_NOTATION_AND_FORMAT.md).
+Wszystkie warstwy opisane jako blueprint pozostają niewykonywalne. Implementacja Zeusa nadal zabroniona.
