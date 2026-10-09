@@ -133,3 +133,10 @@ W ostatnim uzupełnieniu wdrożono również **Spearmana z obsługą remisów**,
 - **Żadne** FPGA ICE40 ani Passage L20 nie zostało podłączone; `hardware_dispatch_plan` zwraca wyłącznie status `UNAVAILABLE` lub `DENIED`. Kod Mojo/Lean nie był kompilowany na obecnym runnerze CI.
 - Komunikacja sieciowa tylko po świadomym `permit_network=True`; podpisany payload pozostaje danymi, nie poleceniem wykonania.
 - **ZEUS: ON_HOLD_AWAITING_USER_MATERIAL** — biblioteka nie tworzy i nie uruchamia żadnego agenta Zeus.
+
+## MCP Discovery & Admission — raport o globalnych rejestrach (2026-10-09)
+
+- [Analiza źródeł, korekta transportów i wdrożenia](docs/MCP_GLOBAL_LANDSCAPE_2026.md): oficjalny MCP Registry v0.1, GitHub Agentic Workflows, GitLab, Glama, PulseMCP, mcp.so, Smithery, Composio, Hugging Face, LlamaIndex i pozostałe katalogi.
+- `omega_builder/mcp_registry.py` oraz komendy `mcp-registry-url`, `mcp-intake`, `mcp-assess`, `mcp-tool-plan`, `mcp-sources` — **wyłącznie offline**, bez uruchamiania lub automatycznego instalowania serwerów MCP.
+- `catalog/mcp_ecosystem_sources.json`: raportowane przez użytkownika wielkości rejestrów ze statusem **niezweryfikowane**, nie są bieżącymi pomiarami infrastruktury.
+- Dane `examples/mcp_*.json` są **syntetyczne**. Zeus pozostaje wstrzymany.

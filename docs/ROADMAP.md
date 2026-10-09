@@ -53,3 +53,17 @@ W fazie 0 można rozwijać **infrastrukturę katalogu**, dokumentację i mechani
 ## Etap ML Evaluation, Embedder i Data Governance
 
 Dostarczono implementacje offline plus opcjonalne biblioteki rzeczywistych algorytmów: podziały i CV, diagnostyka dryfu, SMOTE na train, LDA, t-SNE, UMAP, autoenkoder NumPy, wykresy oraz prywatność i provenance. Status produkcyjnych endpointów danych: NIEGOTOWE. Pełen audyt: [ML_EVALUATION_GOVERNANCE.md](ML_EVALUATION_GOVERNANCE.md). Zeus ON HOLD.
+
+## MCP Global Landscape — etap intake 2026-10-09
+
+| Wymaganie | Stan |
+|---|---|
+| Normalizacja oficjalnego MCP Registry v0.1, kursory, deduplikacja, źródła | `OFFLINE_IMPLEMENTED` |
+| 7-kryterialny przegląd ryzyka, import allowlisted schemas bez `tools/call` | `OFFLINE_IMPLEMENTED` |
+| Audyt kodu, licencji, provenance; zewnętrzny scanner i egress policy | `NEXT_STAGE` |
+| Realne połączenia, OAuth, produkcyjny Streamable HTTP, instalacja MCP | `NOT_IMPLEMENTED` |
+| Ekonomiczne płatności L402, płatna aktywacja serwerów | `NOT_AUTHORIZED` |
+| Katalogi Glama, Smithery, GitHub Registry, Hugging Face, LlamaHub, Composio | `RESEARCH_ONLY_UNVERIFIED_COUNTS` |
+| AGENT ARCHITEKT OMEGA ZEUS INFINITY | `ON_HOLD_AWAITING_USER_MATERIAL` |
+
+[Pełny audyt MCP](MCP_GLOBAL_LANDSCAPE_2026.md).
