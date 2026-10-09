@@ -137,8 +137,11 @@ def classification_report(truth, predicted):
     classes = sorted(set(truth) | set(predicted), key=lambda x:(str(type(x)),str(x)))
     if len(classes)>1000:
         raise ValidationError("Too many classes")
-    cm = [[sum(a == c and b == d for a,b in zip(truth,predicted))
-           for d in classes] for c in classes]
+    # Accumulate O(n + C^2), never scan all observations for every cell.
+    index={label:i for i,label in enumerate(classes)}
+    cm=[[0 for _ in classes] for _ in classes]
+    for observed,expected in zip(truth,predicted):
+        cm[index[observed]][index[expected]]+=1
     details=[]
     for index,c in enumerate(classes):
         tp=cm[index][index]
