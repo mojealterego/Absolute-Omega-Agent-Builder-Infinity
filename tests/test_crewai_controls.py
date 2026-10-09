@@ -11,6 +11,28 @@ def policy(**kw):
 
 
 class FlowTests(unittest.TestCase):
+    def test_replay_matches(self):
+        run=f.OfflineFlow(policy())
+        run.record("collect",False,4,"failX")
+        run.record("collect",True,7,"successX")
+        replayed=f.replay_flow(run.policy,run.audit)
+        self.assertEqual(replayed,run.snapshot())
+
+    def test_replay_rejects_modified_audit(self):
+        run=f.OfflineFlow(policy())
+        run.record("collect",True,1,"receiptX")
+        events=[dict(event) for event in run.audit]
+        events[0]["cost_micro_usd"]=99
+        with self.assertRaises(f.FlowPolicyError):
+            f.replay_flow(run.policy,events)
+
+    def test_long_hash_chain_budget(self):
+        steps=[f.Step("s",None,None,10)]
+        flow=f.OfflineFlow(f.FlowPolicy(steps,"s",max_events=1000))
+        for i in range(9):
+            flow.record("s",False,0,"receipt"+str(i))
+        self.assertEqual(len(flow.snapshot()["audit_sha256"]),64)
+
     def test_successful_bounded_flow(self):
         run=f.OfflineFlow(policy())
         a=run.record("collect",True,10,"receipt1")
