@@ -90,3 +90,13 @@ Nie ma kopiowanych obcych kodów lub modeli. Spis nazw technologii służy wył�
 - `tests/test_volume1.py` — testy MARS, Zeusa, FinOps i referencyjnego modelu.
 
 Ważne: dane o jakości i p95 mają pochodzić z pomiarów właściwych dla domeny. Model odrzuca niedopuszczalne API i nie emuluje prawdziwego dostawcy.
+
+## Mathematical Reasoning Core — Bloki V–VIII
+
+Zaaplikowano działającą lokalną bibliotekę matematyczną (algebra liniowa, rozkłady LU/QR/Cholesky, precyzyjne układy wymierne, ograniczona logika formalna, grafy, statystyka i analiza numeryczna). SVD wymaga zainstalowanego NumPy.
+
+Szczegóły, ograniczenia, przykłady i definicje gwarancji: [docs/MATHEMATICAL_REASONING_CORE.md](docs/MATHEMATICAL_REASONING_CORE.md).
+
+Uruchomienie: python -m omega_builder math-ops; python -m omega_builder math examples/math_exact_linear.json.
+
+Żadnego automatycznego tworzenia ani uruchamiania agenta Zeus. ON HOLD.
