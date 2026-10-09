@@ -125,6 +125,6 @@ Przykładowa skala podobieństwa wektorów: \(\operatorname{cos}(x,y)=\frac{x\cd
 
 ## G. Co faktycznie dostarczono w tym etapie
 
-- Wpisano rodzaje produktów, 257 języków do katalogu wyborów, 141 nazw frameworków/technologii, 134 wymagania funkcjonalne i blueprinty.
+- Wpisano rodzaje produktów, 257 języków do katalogu wyborów, 141 nazw frameworków/technologii, 133 unikalne wymagania funkcjonalne i blueprinty.
 - Utworzono prosty walidowany kontrakt wyboru, CLI i testy katalogu.
 - **Nie utworzono Zeusa ani żadnego agenta**; brak deployu, połączeń sieciowych, kluczy, serwerów FTP/SFTP/SMB, działań na urządzeniu lub dostępu do zewnętrznej infrastruktury.

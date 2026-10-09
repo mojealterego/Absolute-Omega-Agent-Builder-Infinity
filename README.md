@@ -26,7 +26,7 @@ Dla każdej kategorii, zgodnie z dozwolonym trybem, użytkownik wybiera Code / N
 - **10** opcji głównego menu.
 - **257** nazw języków, dialektów i DSL do wyboru (`catalog_only`). Żadnego z tych 257 adapterów kompilacji nie uznano za zaimplementowany tylko na podstawie wpisu na liście.
 - **141** nazw frameworków, protokołów, produktów i środowisk: kandydaci (`candidate_unverified`), a nie aktywne integracje.
-- **134** zapisane wymagania funkcjonalne, poznawcze, ewolucyjne, bezpieczeństwa i biznesowe.
+- **133** unikalne wymagania funkcjonalne, poznawcze, ewolucyjne, bezpieczeństwa i biznesowe.
 - Wstępna specyfikacja **Zeusa** z blokadą implementacji do czasu przekazania brakującego materiału i wyraźnego polecenia użytkownika.
 
 ## Szybki start (Python 3.11+, bez zewnętrznych pakietów)
