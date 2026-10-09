@@ -140,3 +140,13 @@ W ostatnim uzupełnieniu wdrożono również **Spearmana z obsługą remisów**,
 - `omega_builder/mcp_registry.py` oraz komendy `mcp-registry-url`, `mcp-intake`, `mcp-assess`, `mcp-tool-plan`, `mcp-sources` — **wyłącznie offline**, bez uruchamiania lub automatycznego instalowania serwerów MCP.
 - `catalog/mcp_ecosystem_sources.json`: raportowane przez użytkownika wielkości rejestrów ze statusem **niezweryfikowane**, nie są bieżącymi pomiarami infrastruktury.
 - Dane `examples/mcp_*.json` są **syntetyczne**. Zeus pozostaje wstrzymany.
+
+## CrewAI — nowe źródło, hardening przepływów i pamięci (2026-10-09)
+
+- [Audyt 16-stronicowego raportu CrewAI](docs/CREWAI_SECURITY_ARCHITECTURE_REVIEW_2026.md): analiza Flows vs Crews, typowanego stanu, MCP, OpenTelemetry, ataków tool poisoning / DNS rebinding / token passthrough i nieweryfikowanych obietnic finansowych. SHA-256 źródłowego PDF zapisany w audycie.
+- `omega_builder/crew_flow_guard.py`: wykonująca się **offline** kontrola acyklicznych grafów, ograniczonych prób i kosztów, manifestów narzędzi, SHA-256 argumentów oraz replayu zdarzeń z porównaniem do niezależnie przechowywanego skrótu. **Nie wykonuje zadań agentów.**
+- `omega_builder/crew_memory.py`: ranking według cosine similarity + half-life recency + importance, z filtrem izolacji zakresu i znacznikiem niezweryfikowanego pochodzenia. **Nie jest to pamięć CrewAI ani aktywny model embeddingowy.**
+- `examples/crewai/typed_flow_example.py`: przykład prawdziwej składni typowanego `Flow[BaseModel]` i `@start/@router/@listen` w SDK CrewAI. Wymaga osobno zainstalowanego CrewAI; **nie został uruchomiony w standardowym CI**, nie definiuje ani nie uruchamia agentów.
+- `tests/test_crewai_controls.py`: testy rozdzielenia uprawnień, kontroli kosztów, odmowy dla cykli, niezmienności historii i rankingowania. Do produkcji pozostają integracje z SDK, realne HITL, sandbox i OTel.
+
+**Ważne:** zgodność schematu i przewidywalność kontrolera Flows nie gwarantują deterministycznej jakości ani bezpieczeństwa probabilistycznych odpowiedzi LLM. Zeus nadal `ON_HOLD_AWAITING_USER_MATERIAL`.
