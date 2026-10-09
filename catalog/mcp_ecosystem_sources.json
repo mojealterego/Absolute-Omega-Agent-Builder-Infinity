@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "compiled_from": "user-supplied Globalny Krajobraz Infrastruktury Agentowej report, 2026-10-09",
+  "verification_policy": "Counts/market claims below are allegations in source text, not observed live measurements. Every listing is a candidate only.",
+  "protocol_sources": [
+    {
+      "id": "mcp_spec_2026_07_28",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28",
+      "status": "official_primary_checked",
+      "note": "Protocol 2026-07-28. Streamable HTTP new revision POST only, older revisions have GET support; stdio and Streamable HTTP."
+    },
+    {
+      "id": "official_mcp_registry",
+      "url": "https://registry.modelcontextprotocol.io/v0.1/servers",
+      "status": "official_api_documented",
+      "note": "Discovery GET /v0.1/servers, cursor metadata.nextCursor, search, updated_since; never auto-install."
+    },
+    {
+      "id": "github_agentic_workflows",
+      "url": "https://github.github.com/gh-aw/guides/mcps/",
+      "status": "official_primary_checked",
+      "note": "mcp-servers command/container/url; registry points to metadata, not mandatory execution source."
+    },
+    {
+      "id": "gitlab_mcp",
+      "url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server_tools/",
+      "status": "official_primary_checked",
+      "note": "Cursor-based pagination varies by tool; follow endCursor/hasNextPage."
+    }
+  ],
+  "registries": [
+    {
+      "id": "glama",
+      "url": "https://glama.ai/",
+      "reported_servers": 97619,
+      "reported_tools": 953010,
+      "verification": "reported_unverified"
+    },
+    {
+      "id": "mcp_so",
+      "url": "https://mcp.so/",
+      "reported_servers": 21000,
+      "verification": "reported_unverified"
+    },
+    {
+      "id": "pulsemcp",
+      "url": "https://www.pulsemcp.com/",
+      "reported_servers": 16000,
+      "verification": "reported_unverified"
+    },
+    {
+      "id": "mcp_directory",
+      "url": "https://mcp.directory/",
+      "reported_servers": 3000,
+      "verification": "reported_unverified"
+    },
+    {
+      "id": "smithery",
+      "url": "https://smithery.ai/",
+      "reported_servers": 2000,
+      "verification": "reported_unverified"
+    },
+    {
+      "id": "top_mcps",
+      "url": "https://top-mcps.com/",
+      "reported_servers": 280,
+      "verification": "reported_unverified"
+    },
+    {
+      "id": "github_mcp_registry",
+      "url": "https://github.com/mcp",
+      "verification": "registry_candidate_not_synced"
+    }
+  ],
+  "integration_layers": [
+    {
+      "id": "composio",
+      "url": "https://composio.dev/",
+      "reported_toolkits": 1519,
+      "verification": "reported_unverified"
+    },
+    {
+      "id": "nango",
+      "url": "https://www.nango.dev/",
+      "verification": "candidate_not_integrated"
+    },
+    {
+      "id": "merge",
+      "url": "https://www.merge.dev/",
+      "verification": "candidate_not_integrated"
+    },
+    {
+      "id": "arcade",
+      "url": "https://www.arcade.dev/",
+      "verification": "candidate_not_integrated"
+    },
+    {
+      "id": "pipedream",
+      "url": "https://pipedream.com/",
+      "verification": "candidate_not_integrated"
+    },
+    {
+      "id": "zapier",
+      "url": "https://zapier.com/",
+      "verification": "candidate_not_integrated"
+    },
+    {
+      "id": "cerbos",
+      "url": "https://www.cerbos.dev/",
+      "verification": "candidate_not_integrated"
+    }
+  ],
+  "knowledge_sources": [
+    {
+      "id": "huggingface",
+      "url": "https://huggingface.co/",
+      "verification": "candidate_not_integrated"
+    },
+    {
+      "id": "smolagents",
+      "url": "https://github.com/huggingface/smolagents",
+      "verification": "candidate_not_integrated"
+    },
+    {
+      "id": "llamaindex",
+      "url": "https://github.com/run-llama/llama_index",
+      "verification": "candidate_not_integrated"
+    },
+    {
+      "id": "llamahub",
+      "url": "https://llamahub.ai/",
+      "verification": "candidate_not_integrated"
+    }
+  ],
+  "no_auto_execution": true,
+  "no_auto_payments": true,
+  "no_auto_account_creation": true,
+  "zeus_status": "ON_HOLD_AWAITING_USER_MATERIAL"
+}

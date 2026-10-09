@@ -16,7 +16,7 @@ class CatalogError(ValueError):
 
 def load_catalog(name: str) -> dict[str, Any]:
     """Load only one of the declared catalog files from the repository root."""
-    allowed = {"build_types", "languages", "frameworks", "capabilities", "infrastructure", "zeus_contract", "mars_variants"}
+    allowed = {"build_types", "languages", "frameworks", "capabilities", "infrastructure", "zeus_contract", "mars_variants", "mcp_ecosystem_sources"}
     if name not in allowed:
         raise CatalogError(f"Unknown catalog: {name}")
     path = CATALOG / f"{name}.json"

@@ -1,0 +1,31 @@
+{
+  "manifest": [
+    {
+      "name": "read_docs",
+      "description": "Read-only documents",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "delete_all",
+      "description": "Should never be authorized without human approval",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ],
+  "allowlist": [
+    "read_docs"
+  ],
+  "max_tools": 1
+}

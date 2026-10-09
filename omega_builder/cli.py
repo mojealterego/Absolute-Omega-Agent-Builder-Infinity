@@ -9,6 +9,10 @@ from pathlib import Path
 from .catalog import CatalogError, catalog_index, load_catalog
 from .selection import Selection, SelectionError, audit_catalogs, validate_selection
 from .mathematics.api import OPERATIONS, calculate, MathAPIError
+from .mcp_registry import (
+    MCPRegistryError, ingest_page, normalize_entry, assess_candidate,
+    registry_list_query, plan_tool_descriptors,
+)
 
 
 def _print_json(value: object) -> None:
@@ -38,6 +42,17 @@ def build_parser() -> argparse.ArgumentParser:
     cmd.add_parser("math-ops", help="List offline, whitelist-verified math primitives")
     m = cmd.add_parser("math", help="Run one JSON math problem")
     m.add_argument("config", type=Path)
+    mcp_url = cmd.add_parser("mcp-registry-url", help="Plan official MCP Registry v0.1 URL (NO network)")
+    mcp_url.add_argument("--search")
+    mcp_url.add_argument("--cursor")
+    mcp_url.add_argument("--updated-since")
+    mcp_intake = cmd.add_parser("mcp-intake", help="Normalize offline MCP Registry JSON page; NO installs")
+    mcp_intake.add_argument("config", type=Path)
+    mcp_assess = cmd.add_parser("mcp-assess", help="Assess one MCP candidate with user-supplied evidence")
+    mcp_assess.add_argument("config", type=Path)
+    mcp_tools = cmd.add_parser("mcp-tool-plan", help="Produce allowlisted tool schemas only, no tool calls")
+    mcp_tools.add_argument("config", type=Path)
+    cmd.add_parser("mcp-sources", help="Show research source catalogue (reported figures unverified)")
     return parser
 
 
@@ -61,6 +76,25 @@ def main(argv: list[str] | None = None) -> int:
             if args.config.stat().st_size > 128 * 1024:
                 raise MathAPIError("Math input too large (128 KiB max)")
             _print_json(calculate(json.loads(args.config.read_text(encoding="utf-8"))))
+        elif args.command == "mcp-registry-url":
+            _print_json({"url": registry_list_query(args.search, args.cursor, args.updated_since),
+                         "network_requested": False})
+        elif args.command == "mcp-sources":
+            _print_json(load_catalog("mcp_ecosystem_sources"))
+        elif args.command in {"mcp-intake", "mcp-assess", "mcp-tool-plan"}:
+            if args.config.stat().st_size > 1024 * 1024:
+                raise MCPRegistryError("MCP JSON input limited to 1 MiB")
+            data = json.loads(args.config.read_text(encoding="utf-8"))
+            if args.command == "mcp-intake":
+                _print_json(ingest_page(data))
+            elif args.command == "mcp-assess":
+                if not isinstance(data, dict) or set(data) != {"entry", "evidence"}:
+                    raise MCPRegistryError("mcp-assess requires entry and evidence")
+                _print_json(assess_candidate(normalize_entry(data["entry"]), data["evidence"]))
+            elif args.command == "mcp-tool-plan":
+                if not isinstance(data, dict) or set(data) != {"manifest", "allowlist", "max_tools"}:
+                    raise MCPRegistryError("mcp-tool-plan requires manifest, allowlist and max_tools")
+                _print_json(plan_tool_descriptors(data["manifest"], data["allowlist"], data["max_tools"]))
         elif args.command == "validate":
             selection = Selection.from_dict(json.loads(args.config.read_text(encoding="utf-8")))
             _print_json(validate_selection(selection))
@@ -84,6 +118,6 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 _print_json(result)
         return 0
-    except (CatalogError, SelectionError, MathAPIError, OSError, json.JSONDecodeError) as exc:
+    except (CatalogError, SelectionError, MathAPIError, MCPRegistryError, OSError, json.JSONDecodeError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2

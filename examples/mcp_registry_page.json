@@ -1,0 +1,57 @@
+{
+  "servers": [
+    {
+      "server": {
+        "name": "io.github.sample/read-only-docs",
+        "version": "1.0.0",
+        "description": "TEST FIXTURE ONLY; NOT A LIVE SERVER",
+        "repository": {
+          "url": "https://github.com/sample/docs",
+          "source": "github",
+          "id": "sample-static-id"
+        },
+        "packages": [
+          {
+            "registryType": "npm",
+            "identifier": "@sample/omega-docs",
+            "version": "1.0.0",
+            "transport": {
+              "type": "stdio"
+            }
+          }
+        ],
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.example.org/mcp"
+          }
+        ]
+      },
+      "_meta": {
+        "io.modelcontextprotocol.registry/official": {
+          "status": "active"
+        }
+      }
+    },
+    {
+      "server": {
+        "name": "com.example/search",
+        "version": "2.0.1",
+        "description": "SYNTHETIC FIXTURE, no deployment",
+        "repository": {
+          "url": "https://github.com/sample/search",
+          "source": "github"
+        },
+        "remotes": []
+      },
+      "_meta": {
+        "io.modelcontextprotocol.registry/official": {
+          "status": "deprecated"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "nextCursor": ""
+  }
+}
