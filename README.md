@@ -2,7 +2,7 @@
 
 **Etap 0 — przyjęcie wiedzy i kontrakt wyboru. Agent ARCHITEKT OMEGA ZEUS INFINITY nie został utworzony.**
 
-Repozytorium zawiera działającą, lokalną warstwę **wyboru rodzaju projektu**, rejestry techniczne oraz udokumentowane wymagania. Aktualny kod waliduje konfigurację i wystawia wyłącznie `selection_blueprint_only`. **Nie uruchamia agentów, nie trenuje modeli, nie instaluje serwerów ani nie wykonuje kodu użytkownika.**
+Repozytorium zawiera działającą, lokalną warstwę **wyboru rodzaju projektu**, rejestry techniczne oraz udokumentowane wymagania. Aktualny kod waliduje konfigurację i wystawia wyłącznie `selection_blueprint_only`. **Nie uruchamia agentów ani nie instaluje serwerów ani nie wykonuje dowolnego kodu użytkownika.** Istnieje osobny edukacyjny autoenkoder NumPy z jawnym treningiem offline; nie oznacza to uruchomionej autonomicznej infrastruktury.
 
 ## Menu główne
 
@@ -125,3 +125,11 @@ Kolejny etap Bloków IX/X działa **bez tworzenia Zeusa**.
 **Zeus nadal wstrzymany.**
 
 W ostatnim uzupełnieniu wdrożono również **Spearmana z obsługą remisów**, deterministyczny training-only random under/oversampling oraz referencyjny sampler Gaussa i augmentację liczbową z wyraźnymi ostrzeżeniami dotyczącymi prywatności i integralności etykiet.
+
+## Etap 14–15 — Edge Fabric: Mojo / Extropic / Lean / Zenoh / TorchHD
+
+- [Realizacja i ograniczenia](docs/EDGE_FABRIC_REFERENCE.md) — CPU Float32 TensorBank, Ising-chain Gibbs sampler, bipolar HDC/VSA, bezpieczne zdarzenia Zenoh z HMAC, read-only approval gate oraz referencyjne źródła Mojo i Lean 4.
+- Użycie bibliotek THRML/JAX, TorchHD i Zenoh wymaga świadomej instalacji `.[thermodynamic]`, `.[hdc]`, `.[mesh]`; **standardowe CI nie potwierdza ich uruchomienia**.
+- **Żadne** FPGA ICE40 ani Passage L20 nie zostało podłączone; `hardware_dispatch_plan` zwraca wyłącznie status `UNAVAILABLE` lub `DENIED`. Kod Mojo/Lean nie był kompilowany na obecnym runnerze CI.
+- Komunikacja sieciowa tylko po świadomym `permit_network=True`; podpisany payload pozostaje danymi, nie poleceniem wykonania.
+- **ZEUS: ON_HOLD_AWAITING_USER_MATERIAL** — biblioteka nie tworzy i nie uruchamia żadnego agenta Zeus.
