@@ -1,0 +1,19 @@
+{
+  "operation": "logic.check_validity",
+  "args": {
+    "formula": [
+      "or",
+      [
+        "var",
+        "p"
+      ],
+      [
+        "not",
+        [
+          "var",
+          "p"
+        ]
+      ]
+    ]
+  }
+}

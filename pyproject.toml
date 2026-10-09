@@ -4,12 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "absolute-omega-agent-builder-infinity"
-version = "0.1.0"
-description = "Catalog and selection interface for modular Agent Builder; Zeus explicitly on hold"
+version = "0.2.0"
+description = "Builder catalog and audited mathematical reasoning primitives; Zeus held"
 requires-python = ">=3.11"
 
-[tool.setuptools]
-packages = ["omega_builder"]
+[project.optional-dependencies]
+math = ["numpy>=1.26,<3"]
+
+[tool.setuptools.packages.find]
+include = ["omega_builder*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

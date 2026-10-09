@@ -8,6 +8,7 @@ from pathlib import Path
 
 from .catalog import CatalogError, catalog_index, load_catalog
 from .selection import Selection, SelectionError, audit_catalogs, validate_selection
+from .mathematics.api import OPERATIONS, calculate, MathAPIError
 
 
 def _print_json(value: object) -> None:
@@ -34,6 +35,9 @@ def build_parser() -> argparse.ArgumentParser:
     select.add_argument("--framework", action="append", default=[])
     select.add_argument("--target-build-type")
     select.add_argument("--output", type=Path)
+    cmd.add_parser("math-ops", help="List offline, whitelist-verified math primitives")
+    m = cmd.add_parser("math", help="Run one JSON math problem")
+    m.add_argument("config", type=Path)
     return parser
 
 
@@ -51,6 +55,12 @@ def main(argv: list[str] | None = None) -> int:
             _print_json([item for item in data if not args.category or item["category"] == args.category])
         elif args.command == "catalog-audit":
             _print_json(audit_catalogs())
+        elif args.command == "math-ops":
+            _print_json({"operations": sorted(OPERATIONS), "scope": "offline bounded mathematical methods"})
+        elif args.command == "math":
+            if args.config.stat().st_size > 128 * 1024:
+                raise MathAPIError("Math input too large (128 KiB max)")
+            _print_json(calculate(json.loads(args.config.read_text(encoding="utf-8"))))
         elif args.command == "validate":
             selection = Selection.from_dict(json.loads(args.config.read_text(encoding="utf-8")))
             _print_json(validate_selection(selection))
@@ -74,6 +84,6 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 _print_json(result)
         return 0
-    except (CatalogError, SelectionError, OSError, json.JSONDecodeError) as exc:
+    except (CatalogError, SelectionError, MathAPIError, OSError, json.JSONDecodeError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
