@@ -1,6 +1,6 @@
 # JARVIS OMEGA ∞
 
-**Etap 0 — przyjęcie wiedzy i kontrakt wyboru. Agent ARCHITEKT OMEGA ZEUS INFINITY nie został utworzony.**
+**Etap 0 — przyjęcie wiedzy i kontrakt wyboru. Agent ARCHITEKT OMEGA JARVIS INFINITY nie został utworzony.**
 
 Repozytorium zawiera działającą, lokalną warstwę **wyboru rodzaju projektu**, rejestry techniczne oraz udokumentowane wymagania. Aktualny kod waliduje konfigurację i wystawia wyłącznie `selection_blueprint_only`. **Nie uruchamia agentów ani nie instaluje serwerów ani nie wykonuje dowolnego kodu użytkownika.** Istnieje osobny edukacyjny autoenkoder NumPy z jawnym treningiem offline; nie oznacza to uruchomionej autonomicznej infrastruktury.
 
@@ -53,9 +53,9 @@ Dla frameworka mieszanego:
 python -m omega_builder select --build-type framework_mixed --target-build-type agent_system --implementation code --language python --framework-mode mixed --framework langgraph --framework crewai
 ```
 
-## Zasada priorytetowa: Zeus pozostaje na wstrzymaniu
+## Zasada priorytetowa: JARVIS pozostaje na wstrzymaniu
 
-Użytkownik zażądał, aby **Zeus był pierwszym projektowanym agentem** po skompletowaniu materiału, oraz jednocześnie zakazał jego przedwczesnego tworzenia. W tym repo jest tylko **specyfikacja kontraktu `catalog/zeus_contract.json`** i dokumentacja (`docs/ZEUS_DESIGN_HOLD.md`). Nie ma pliku AGENT.md, modelu Zeusa, serwera Zeusa, promptu wdrożeniowego ani runtime'u Zeusa. Nie odblokowywać automatycznie po CI.
+Użytkownik zażądał, aby **JARVIS był pierwszym projektowanym agentem** po skompletowaniu materiału, oraz jednocześnie zakazał jego przedwczesnego tworzenia. W tym repo jest tylko **specyfikacja kontraktu `catalog/zeus_contract.json`** i dokumentacja (`docs/ZEUS_DESIGN_HOLD.md`). Nie ma pliku AGENT.md, modelu Zeusa, serwera Zeusa, promptu wdrożeniowego ani runtime'u Zeusa. Nie odblokowywać automatycznie po CI.
 
 ## Dokumentacja
 
